@@ -35,7 +35,7 @@ Hover over a token to see the exact confidence and the top 5 other candidates.
 open_ai_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="sk-...",
-    value=os.getenv("OPENAI_API_KEY","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"),
+    value=os.getenv("OPENAI_API_KEY"),
 )
 
 if not open_ai_key:
