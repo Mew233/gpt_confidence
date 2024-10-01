@@ -12,7 +12,7 @@ load_dotenv()
 
 st.set_page_config(
     menu_items={
-        "Report a bug": "https://bugs.openai.com/browse",
+        "Report a bug": "https://github.com/Mew233",
     }
 )
 
