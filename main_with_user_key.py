@@ -6,13 +6,13 @@ from openai import OpenAI, Stream
 from prompts.prompt_design import Prompt
 from dotenv import load_dotenv
 import os
-
+import pyperclip
 
 load_dotenv()
 
 st.set_page_config(
     menu_items={
-        "Report a bug": "https://github.com/Mew233",
+        "Report a bug": "https://bugs.openai.com/browse",
     }
 )
 
@@ -32,11 +32,15 @@ Hover over a token to see the exact confidence and the top 5 other candidates.
         unsafe_allow_html=True,
     )
 
+
 open_ai_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="sk-...",
-    value=os.getenv("OPENAI_API_KEY"),
+    value=os.getenv("OPENAI_API_KEY","sk-..."),
 )
+def get_client():
+    return OpenAI(api_key=st.secrets.OPENAI_API_KEY)
+
 
 if not open_ai_key:
     st.markdown("👈 To get started, enter your OpenAI API key in the side panel")
@@ -50,13 +54,23 @@ client = OpenAI(api_key=open_ai_key)
 models = ["gpt-4o", "gpt-4o-2024-08-06", "gpt-4o-2024-05-13", "gpt-4o-mini"]
 model_name = st.sidebar.radio("Pick a model", options=models, index=0)
 
-with st.sidebar.expander("Patient data example ", expanded=True):
-    st.markdown(
-    """
-     I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005 
+
+a = st.text_area("Patient data example ",
+    value = """I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005 
  that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node. 
-    """
-    )
+    """)
+st.write(f"{len(a)} characters.")
+
+if st.button('Copy'):
+    pyperclip.copy(a)
+    st.success('Text copied successfully!')
+
+
+
+
+
+
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
