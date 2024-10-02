@@ -3,10 +3,11 @@ class Prompt:
         self.entity_chat_preamble = "Pretend you are a helpful Oncologist reading the given medical report." \
                                     "Answer as concisely as possible based on the input report."
 
-        self.entity_prompt_template = "\n\nProvide only {} as a single python set of strings in the format: set<str>." \
-                                      "Return set('no') when the information is not found. " \
-                                      "Use '\'' for special quotation characters." \
-                                      "Do not output information that is not present in input."
+        self.entity_prompt_template = "Provide only the output as a Python set of strings in the format: set(). "\
+                                      "If the information is not found, return set('no')."\
+                                      "Use single quotes ('') for strings."\
+                                     "Do not include any language specifier (such as ```python) or any other additional formatting or explanations."\
+                                     "Output only the raw set without any code block or formatting."
 
         self.adv_chat_preamble = "Pretend you are an oncologist. Answer based on the given clinical note for a patient."
         self.adv_prompt_template = "{} " \
