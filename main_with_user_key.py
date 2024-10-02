@@ -32,11 +32,30 @@ Hover over a token to see the exact confidence and the top 5 other candidates.
     )
 
 
+# open_ai_key = st.sidebar.text_input(
+#     label="OpenAI API key",
+#     placeholder="sk-...",
+#     value=os.getenv("OPENAI_API_KEY","sk-..."),
+# )
+
 open_ai_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="sk-...",
     value=os.getenv("OPENAI_API_KEY","sk-..."),
+    type='password',
 )
+# Add css to hide item with title "Show password text"
+st.markdown(
+    """
+<style>
+    [title="Show password text"] {
+        display: none;
+    }
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 def get_client():
     return OpenAI(api_key=st.secrets.OPENAI_API_KEY)
 
