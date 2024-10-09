@@ -174,7 +174,7 @@ if cur_text_ := st.chat_input("Input the patient's note"):
 
     st.session_state.messages.append(dict(role="user", content=prompt))
     with st.chat_message("user", avatar=avatars.get("user")):
-        st.markdown(prompt)
+        st.markdown(template.format(cur_text_,subprompt))
         st.session_state.messages.append(dict(role="assistant", content=prompt))
 
     with st.chat_message("assistant", avatar=avatars.get("assistant")):

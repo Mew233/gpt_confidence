@@ -3,3 +3,4 @@ venv/
 .vscode/
 .env
 .streamlit/secrets.toml
+HIPPA_data/
