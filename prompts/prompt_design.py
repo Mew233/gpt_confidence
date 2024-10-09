@@ -5,22 +5,45 @@ class Prompt:
 
         self.entity_prompt_template = "Provide only the output as a Python set of strings in the format: set(). "\
                                       "If the information is not found, return set('no')."\
-                                      "Use single quotes ('') for strings."\
-                                     "Do not include any language specifier (such as ```python) or any other additional formatting or explanations."\
-                                     "Output only the raw set without any code block or formatting."
+                                      "Use single quotes ('') for strings." \
+                                      "Do not return any information not present in the note. " \
+                                      "Do not return explanations." \
 
-        self.adv_chat_preamble = "Pretend you are an oncologist. Answer based on the given clinical note for a patient."
+            # "Do not include any language specifier (such as ```python) or any other additional formatting or explanations."\
+
+
+        # self.adv_chat_preamble = "Pretend you are an oncologist. Answer based on the given clinical note for a patient."
+        self.adv_chat_preamble = "Pretend you are an oncologist. Answer based on the given clinical note for a patient with reasoning step by step."\
+                                "For each setep, provide a title that describes what you'are doing in that step." \
+                                 "Decide if you need another step or if you're ready to give the final answer." \
+                                 "USE AS MANY REASONING STEPS AS POSSIBLE. AT LEAST 2."\
+                                    "BE AWARE OF YOUR LIMITATIONS AS AN LLM AND WHAT YOU CAN AND CANNOT DO. "\
+                                     "IN YOUR REASONING, INCLUDE EXPLORATION OF ALTERNATIVE ANSWERS. CONSIDER YOU MAY BE WRONG, AND IF YOU ARE WRONG IN YOUR REASONING, WHERE IT WOULD BE. "\
+                                     "FULLY TEST ALL OTHER POSSIBILITIES. YOU CAN BE WRONG. "\
+                                     "WHEN YOU SAY YOU ARE RE-EXAMINING, ACTUALLY RE-EXAMINE, AND USE ANOTHER APPROACH TO DO SO. DO NOT JUST SAY YOU ARE RE-EXAMINING. "\
+                                     "USE AT LEAST 2 METHODS TO DERIVE THE ANSWER. USE BEST PRACTICES."\
+                                    "For the final answer, your title should be ----FINAL ANSWER----DO NOT Do not return explanations for your final answer."
         self.adv_prompt_template = "{} " \
-                                   "Answer as concisely as possible." \
-                                   "Use '\'' for special quotation characters." \
-                                   "Do not return any information not present in the note. " \
-                                   "Do not return any explanation."
+                               "Answer as concisely as possible." \
+                               "Use '\'' for special quotation characters." \
+                               "Do not return any information not present in the note. " \
+                               "Do not return explanations." \
+
 
         # TODO: add sdoh details
         # self.sdoh_entity_chat_preamble = ""
         # self.sdoh_entity_prompt_template = ""
-        self.sdoh_entity_chat_preamble = "Pretend you are a helpful Oncologist reading the given medical report." \
-                                    "Answer as concisely as possible based on the input report."
+        # self.sdoh_entity_chat_preamble = "Pretend you are a helpful Oncologist reading the given medical report." \
+        #                             "Answer as concisely as possible based on the input report."
+        self.sdoh_entity_chat_preamble ="Pretend you are an oncologist. Answer based on the given clinical note for a patient with reasoning step by step."\
+                                "For each setep, provide a title that describes what you'are doing in that step." \
+                                 "Decide if you need another step or if you're ready to give the final answer." \
+                                 "USE AS MANY REASONING STEPS AS POSSIBLE. AT LEAST 2."\
+                                    "BE AWARE OF YOUR LIMITATIONS AS AN LLM AND WHAT YOU CAN AND CANNOT DO. "\
+                                     "IN YOUR REASONING, INCLUDE EXPLORATION OF ALTERNATIVE ANSWERS. CONSIDER YOU MAY BE WRONG, AND IF YOU ARE WRONG IN YOUR REASONING, WHERE IT WOULD BE. "\
+                                     "FULLY TEST ALL OTHER POSSIBILITIES. YOU CAN BE WRONG. "\
+                                     "WHEN YOU SAY YOU ARE RE-EXAMINING, ACTUALLY RE-EXAMINE, AND USE ANOTHER APPROACH TO DO SO. DO NOT JUST SAY YOU ARE RE-EXAMINING. "\
+                                     "USE AT LEAST 2 METHODS TO DERIVE THE ANSWER. USE BEST PRACTICES."
 
         self.sdoh_entity_prompt_template = """
                         Using this Clinical note as the ONLY source of information:\n\n

@@ -6,6 +6,7 @@ from openai import OpenAI, Stream
 from prompts.prompt_design import Prompt
 from dotenv import load_dotenv
 import os
+import re
 
 load_dotenv()
 
@@ -41,7 +42,7 @@ Hover over a token to see the exact confidence and the top 5 other candidates.
 open_ai_key = st.sidebar.text_input(
     label="OpenAI API key",
     placeholder="sk-...",
-    value=os.getenv("OPENAI_API_KEY","sk-..."),
+    value=os.getenv("OPENAI_API_KEY","sk-"),
     type='password',
 )
 # Add css to hide item with title "Show password text"
@@ -72,6 +73,26 @@ client = OpenAI(api_key=open_ai_key)
 models = ["gpt-4o", "gpt-4o-2024-08-06", "gpt-4o-2024-05-13", "gpt-4o-mini"]
 model_name = st.sidebar.radio("Pick a model", options=models, index=0)
 
+prompt_obj = Prompt()
+prompt_preamble = prompt_obj.get_prompt_preamble(model='gpt-4', inference_type='adv')
+
+# Initialization
+# if 'name' not in st.session_state:
+#     st.session_state['name'] = 'Symptoms'
+
+# values = ['<select>',3, 5, 10, 15, 20, 30]
+# default_ix = values.index(30)
+
+option = st.sidebar.selectbox(
+    "Inference subtype",
+    prompt_obj.adv_criteria_to_prompt_mapping.keys(),index=6,
+)
+
+reset_button_key = "reset_button"
+reset_button = st.sidebar.button("reset",key=reset_button_key)
+if reset_button:
+    st.session_state.messages = []
+    st.session_state['name'] = 'Symptoms'
 
 # a = st.text_area("Patient data example ",
 #     value = """I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005
@@ -81,7 +102,7 @@ a = """I had the pleasure of seeing this patient in consultation regarding the  
      that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node.
      """
 
-if st.button('Patient data example'):
+if not st.button('Patient data example'):
     st.code(a, language='None')
     st.write(f"{len(a)} characters.")
     # pyperclip.copy(a)
@@ -142,12 +163,11 @@ for message in st.session_state.messages:
         else:
             st.html(text)
 
-prompt_obj = Prompt()
-prompt_preamble = prompt_obj.get_prompt_preamble(model='gpt-4', inference_type='adv')
+
 
 # _plc = " I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005  that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node. "
 if cur_text_ := st.chat_input("Input the patient's note"):
-    template, _2ndtemplate, subprompt = prompt_obj.get_prompt(inference_type='sdoh_entity', inference_subtype='symptoms')
+    template, _2ndtemplate, subprompt = prompt_obj.get_prompt(inference_type='sdoh_entity', inference_subtype=option) #option
     prompt = prompt_preamble + template.format(cur_text_,subprompt)
 
     _2nd_prompt = prompt_preamble + _2ndtemplate.format(cur_text_,subprompt)
@@ -155,6 +175,7 @@ if cur_text_ := st.chat_input("Input the patient's note"):
     st.session_state.messages.append(dict(role="user", content=prompt))
     with st.chat_message("user", avatar=avatars.get("user")):
         st.markdown(prompt)
+        st.session_state.messages.append(dict(role="assistant", content=prompt))
 
     with st.chat_message("assistant", avatar=avatars.get("assistant")):
         stream = client.chat.completions.create(
@@ -177,43 +198,56 @@ if cur_text_ := st.chat_input("Input the patient's note"):
                 "content": _2nd_prompt
             }])
 
-        _text = st.markdown(final_response.choices[0].message.content)
-        # st.session_state.messages.append(dict(role="assistant", content=_text))
+        _text = st.markdown("```python\n" + final_response.choices[0].message.content + "\n```")
+        st.session_state.messages.append(dict(role="assistant", content=_text))
 
         # Split the text into individual data entries based on newlines
-        entries = final_response.choices[0].message.content.strip().split('\n')
+        # entries = final_response.choices[0].message.content.strip().split('\n')
 
-        # Iterate and print each entry
-        for index, entry in enumerate(entries, start=1):
-            print(f"Data {index}: {entry}")
-            if index == 1 or index == len(entries):
-                continue
+        # Regular expression to match everything after --FINAL ANSWER--
+        pattern = r'----FINAL ANSWER----\s*(.*)'
+        input_text = final_response.choices[0].message.content
+        # Extracting the text after --FINAL ANSWER--
+        match = re.search(pattern, input_text, re.DOTALL)
 
-            boolean = client.chat.completions.create(
-                model=model_name,
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "Based on your previous prompt and result extracted. "
-                                   "Answer If your result are mataching the records in the  clinical note; you are not answering the actual question."
-                                   "Respond with just one word, the Boolean yes or no. You must output the word 'yes', or the word 'no', nothing else."
-                    },
-                    {
-                        "role": "assistant",
-                        "content": f"Your previous prompt:{_2nd_prompt}"
-                    },
-                    {
-                        "role": "assistant",
-                        "content": f"Result extracted: {entry}"
-                    }],
-                logprobs=True,
-                top_logprobs=5,
-                stream=True,
-                temperature = 0)
+        # Check if there is a match and print the extracted text
+        if match:
+            extracted_text = match.group(1).strip()  # Strip any extra whitespace/newlines
+            print(extracted_text)
 
-            _boolean = stream_to_html(boolean)
-            st.session_state.messages.append(dict(role="assistant", content=_boolean))
-            st.markdown(entry)
+            entries = extracted_text.split('\n')
+
+            # Iterate and print each entry
+            for index, entry in enumerate(entries, start=1):
+                print(f"Data {index}: {entry}")
+                # if index == 1 or index == len(entries):
+                #     continue
+
+                boolean = client.chat.completions.create(
+                    model=model_name,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "Based on your previous prompt and result extracted. "
+                                       "Answer If your result are mataching the records in the  clinical note; you are not answering the actual question."
+                                       "Respond with just one word, the Boolean yes or no. You must output the word 'yes', or the word 'no', nothing else."
+                        },
+                        {
+                            "role": "assistant",
+                            "content": f"Your previous prompt:{_2nd_prompt}"
+                        },
+                        {
+                            "role": "assistant",
+                            "content": f"Result extracted: {entry}"
+                        }],
+                    logprobs=True,
+                    top_logprobs=5,
+                    stream=True,
+                    temperature = 0)
+
+                _boolean = stream_to_html(boolean)
+                st.session_state.messages.append(dict(role="assistant", content=_boolean))
+                st.markdown("```python\n" +entry+"\n```")
 
 
 
