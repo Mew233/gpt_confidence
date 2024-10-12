@@ -85,7 +85,7 @@ prompt_preamble = prompt_obj.get_prompt_preamble(model='gpt-4', inference_type='
 
 option = st.sidebar.selectbox(
     "Inference subtype",
-    prompt_obj.adv_criteria_to_prompt_mapping.keys(),index=6,
+    prompt_obj.adv_criteria_to_prompt_mapping.keys(),index=10,
 )
 
 reset_button_key = "reset_button"
@@ -98,11 +98,85 @@ if reset_button:
 #     value = """I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005
 #  that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node.
 #     """)
-a = """I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005
-     that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node.
-     """
+# a = """I had the pleasure of seeing this patient in consultation regarding the  treatment of her locally recurrent breast cancer on January 09.  As you  know, she is a 73-year-old woman who initially had a right breast mass  removed in February 1994 with an axillary lymph node dissection.  That  surgical procedure revealed a 1 cm, grade 1, infiltrating ductal  carcinoma with clear surgical margins and 21 axillary lymph nodes were  negative for metastatic carcinoma.  S-phase was low at 3.6%.  The tumor  was found to be estrogen-receptor positive and progesterone-receptor  negative.  She received interstitial radiation, which comprised 4500  centigray over a 3 cm diameter.  She received tamoxifen from 1994 to  1996 and stopped due to concern regarding side effects.  At that time,  she was seeing Dr. ***** *****.  In January 1996, a node was  palpated in the left supraclavicular area.  A fine-needle aspiration was  performed and was unremarkable.  A dense area at the 12 o'clock position  in her right breast was tender in 2006 and was felt to be postsurgical  scarring.  This was noted to increase over time in size and density.  Initially, the workup included a PET scan in November 2005
+#      that  revealed a 5 x 7 cm area of density consistent with inflammation.  It is  not clear whether she had a CT-guided biopsy at that time or not.  In  February 2008, she noted discomfort in the right anterior chest wall and  again thought that this area might be slightly larger.  She also thought  that she had a new right breast mass.  Workup of that breast mass was  unremarkable.  However, a breast MRI was performed on March 24 that  revealed a bulky irregular mass in the right 8 o'clock posterior breast,  which measured 1.9 x 1.5 cm with heterogenous enhancement.  Concordant  with an area of metabolic uptake on PET/CT scan, there was a second mass  abutting the pectoralis muscle with similar enhancing characteristics  measuring 1.7 x 1.2 cm.  A third nodule was seen along the right lateral  breast measuring 0.6 x 0.3 cm.  The left breast was unremarkable.  The  PET/CT scan had been performed on 02/22/2008, and was compared to a  PET/CT scan in December 2005.  This revealed a 2 cm right axillary  lymph node and a 1.4 cm hypermetabolic soft tissue nodule with an SUV of  4.1 in the right mid anterior chest wall deep in the subcutaneous fat.  A second right axillary lymph node was also noted, which was  hypermetabolic.  Subsequently, Dr. ***** performed a fine-needle  aspiration of the upper medial area, which was positive for carcinoma,  and a core biopsy of the right breast mass, which revealed a reactive  lymph node.
+#      """
 
-if not st.button('Patient data example'):
+a = """
+
+History of Present Illness
+Mrs. Z is a 69yo RHW with a history of low grade follicular lymphoma and carcinoma in situ of the
+tongue, who presents for follow-up of multifocal GBM s/p resection of L frontal lesion 10/13/15 (NYU),
+RT/TMZ (completed 12/2015), 12 cycles of adjuvant TMZ to 12/30/16, with progression 9/9/19 s/p reRT/
+TMZ 40Gy/15fx 10/15-11/4/19.
+Regarding her oncologic history, she was originally diagnosed with low grade follicular lymphoma around
+2004, initially treated with chemotherapy, but without a full remission. She was seen at NYU in 2014
+where she was noted to have small, stable, residual disease in the left iliac area. Her initial treatment
+course also involved chronic steroid use resulting in bilateral aseptic necrosis of her hips necessitating b/I
+hip replacements. She was also diagnosed with squamous cell carcinoma of the tongue in situ vs. Severe
+dysplasia s/p resection x2 by Dr. Myssiorak at NYU.
+First presented with right-sided weakness and gait imbalance beginning in early Oct 2015 in addition to
+handwriting difficulty. Had a seizure (R arm shaking with language trouble) which prompted MRI brain
+which revealed L frontal enhancing lesion and R occipital FLAIR lesion. Resected 10/13/15 by Dr. Jafar at
+NYU; hemiparetic post-op and spent two weeks at Rusk Rehab with improvement. RT/TMZ (completed
+12/2015), and 12 cycles of adjuvant TMZ through 12/30/16.
+Since that time, MRls have remained stable off treatment without evidence of recurrent disease. Course
+complicated by medical comorbidities and depression impairing functional status.
+Patient underwent T12 kyphoplasty- 2/14/17 2/2 pain following a fall at home with improvement in lower
+back pain. She received steroid injection to spine with minimal relief. In July 2018 she required a 3-4 week inpatient rehab stay for general debility. Following discharge, she
+continued in home rehab 2-3 times per week with improvement in strength. She was clinically stable, with
+continued primarily right leg weakness. Significant back pain limited her mobility and motivation to
+exercise. Husband expressed frustration at this lack of exercise -- the interplay between back pain and the
+need to mobilize was an ongoing theme through the last 2018 and early 2019 visits, though she remained
+clinically and radiographically stable from the tumor standpoint during this time.
+In early 5/2019, the patient developed increased weakness and difficulty with transferring over several
+weeks, and was admitted 5/17/19 for PNA-- she was treated with IV antibiotics, and then sent to UES
+Rehab where she stayed for a month, discharging home at the end of July 2019. Despite some
+improvement in strength at rehab, her gait was definitively worse.
+MRI 9/9/19 identified L frontal enhancement with FOG-avidity on 9/11/19 FOG-PET, concerning for
+progression. Close follow-up MRI 10/6/19 demonstrated evidence of further progression, so she was
+treated with re-RT/TMZ 40Gy/15fx 10/15-11/4/19. Post-RT course marked by increasing confusion and
+decreased mobility starting 11/8/19. Dexamethasone was increased from 1 mg daily to 4 mg daily then to
+4 mg TIO on 11/18/19, with subtle improvement in cognition; dex subsequently tapered to 4 mg BID on
+11/25/19. Post-RT MRI 12/2/19 with increase in enhancement consistent with post-radiation treatment
+effect.
+She returns today in follow-up with close repeat MRI. She was hospitalized for a brief time in the interim
+for pneumonia and treated with antibiotics (doxycycline) that she just completed yesterday 12/29/19. She
+remains on dex 4 mg BID, and ran out of Bactrim yesterday (refilled today). Clinically she has declined
+over the past month with continued bilateral lower extremity weakness, incontinence (initially endorsed
+groin numbness, but later denied this), and short-term memory loss. She requires two person assist for
+transfers and is essentially bed-bound.
+Denies headaches, nausea/vomiting, vision loss, facial droop, hearing loss, vertigo, speech trouble, or
+seizures.
+Assessment and Plan
+Mrs. Z is a 69yo RHW with a history of low grade follicular lymphoma and carcinoma in situ of the
+tongue, who presents for follow-up of multifocal GBM s/p resection of L frontal lesion 10/13/15 (NYU),
+RT/TMZ (completed 12/2015), 12 cycles of adjuvant TMZ to 12/30/16, with progression 9/9/19 s/p reRT/
+TMZ 40Gy/15fx 10/15-11/4/19. The post-RT MRI on 12/2/19 showed treatment-related inflammatory
+changes; she returns today in close follow-up with repeat scan, and has had significant functional decline
+over the past month -- worse short-term memory, increased lethargy, increased generalized weakness
+(worse on the R) and non-ambulatory, requiring 2 person assist for transfers. The patient also endorsed
+significant urinary incontinence; while initially endorsing groin numbness, retracted this later. MRI brain
+today 12/30/19 shows improvement in the treated L frontal enhancing lesion, but a new out-of-field focus
+of enhancement in the L basal ganglia.
+We discussed at length her present situation, with the MRI showing a mixed response. We discussed the
+pros/cons of taking a more comfort-directed approach (hospice) vs that of an aggressive approach, and
+discussed that ultimately the decision to follow either rested with the personal wishes of the patient (and
+her husband), and that either option was fully reasonable at this stage. We reiterated that this was a
+tumor for which we had no cure, and that continued aggressive treatment did not guarantee response or
+prolonged survival. We recommended that she and her husband discuss the direction in which she
+wanted to take things (whether to move towards comfort or to move ahead with aggressive treatments).
+She will think about it, and in the meantime RTC with another scan in 4 weeks.
+1) Glioblastoma, IDH-wildtype- RTC with MRI brain tumor advanced in 1 month
+2) Seizures- continue Keppra 1000mg BID. No seizures since last visit.
+3) Steroids- dexamethasone 4 mg BID. On Protonix. Re-ordered Bactrim DS 1 tab MWF.
+4) Rehab- would benefit physically/emotionally from ongoing rehabilitation (patient's husband hiring
+therapists at home)
+5) Obesity- follow-up with primary care physician.
+6) Frontal lobe syndrome- can consider Ritalin in the future
+"""
+
+if  st.button('Patient data example'):
     st.code(a, language='None')
     st.write(f"{len(a)} characters.")
     # pyperclip.copy(a)

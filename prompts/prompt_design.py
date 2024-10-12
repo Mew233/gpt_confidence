@@ -231,33 +231,33 @@ class Prompt:
 
 
         self.adv_criteria_to_prompt_mapping = {
-            'symptoms': """
-                For this note, please return all symptoms experienced by patient, paired with the date or time they experienced that symptom. 
-                Do not return any medical diagnoses, radiological findings, clinical test, or procedure results.
-                If a symptom is discussed, but only as a potential side effect or in the context of confirming the symptom’s absence, please do not include this symptom.
-                In addition to returning the symptoms, return the date or time of the symptom onset.
-                If the date or time is not present within the note, please return 'unknown' in the given format.
-                Please return as namedtuples separated by newlines in the following format:
-                SymptomEnt(Symptom='Symptom identified', Datetime={'Date or time identified'})
-                Example:
-                SymptomEnt(Symptom='Abdominal Pain', Datetime={'01/01/2020', '02/03/2020'})
-                SymptomEnt(Symptom='lump', Datetime={'unknown'})
-                """,
+            # 'symptoms': """
+            #     For this note, please return all symptoms experienced by patient, paired with the date or time they experienced that symptom.
+            #     Do not return any medical diagnoses, radiological findings, clinical test, or procedure results.
+            #     If a symptom is discussed, but only as a potential side effect or in the context of confirming the symptom’s absence, please do not include this symptom.
+            #     In addition to returning the symptoms, return the date or time of the symptom onset.
+            #     If the date or time is not present within the note, please return 'unknown' in the given format.
+            #     Please return as namedtuples separated by newlines in the following format:
+            #     SymptomEnt(Symptom='Symptom identified', Datetime={'Date or time identified'})
+            #     Example:
+            #     SymptomEnt(Symptom='Abdominal Pain', Datetime={'01/01/2020', '02/03/2020'})
+            #     SymptomEnt(Symptom='lump', Datetime={'unknown'})
+            #     """,
 
-            'symptoms_at_diagnosis': """
-                First, identify the date of first cancer diagnosis for this patient.
-                After you have done this, please return symptoms experienced by the patient that were present before or at the time of cancer diagnosis.
-                If present, pair these with the date or time they started experiencing that symptom. 
-                If the date or time is not present within the note, please return 'unknown' in the given format.
-                Do not return any medical diagnoses, radiological findings, clinical test or procedure results.
-                Please return as namedtuples separated by newlines in the following format:
-                CancerDiagnosis(Datetime={'Date or time of Cancer Diagnosis'})
-                SymptomEnt(Symptom='Symptom identified', Datetime={'Date or time identified'})
-                One example:
-                CancerDiagnosis(Datetime={'03/01/2019'})
-                SymptomEnt(Symptom='Abdominal Pain', Datetime={'01/01/2019'})
-                Do not return any symptoms patient started experiencing subsequent to cancer diagnosis. 
-            """,
+            # 'symptoms_at_diagnosis': """
+            #     First, identify the date of first cancer diagnosis for this patient.
+            #     After you have done this, please return symptoms experienced by the patient that were present before or at the time of cancer diagnosis.
+            #     If present, pair these with the date or time they started experiencing that symptom.
+            #     If the date or time is not present within the note, please return 'unknown' in the given format.
+            #     Do not return any medical diagnoses, radiological findings, clinical test or procedure results.
+            #     Please return as namedtuples separated by newlines in the following format:
+            #     CancerDiagnosis(Datetime={'Date or time of Cancer Diagnosis'})
+            #     SymptomEnt(Symptom='Symptom identified', Datetime={'Date or time identified'})
+            #     One example:
+            #     CancerDiagnosis(Datetime={'03/01/2019'})
+            #     SymptomEnt(Symptom='Abdominal Pain', Datetime={'01/01/2019'})
+            #     Do not return any symptoms patient started experiencing subsequent to cancer diagnosis.
+            # """,
 
             'symptoms_due_to_cancer': """
                 For this note, please return all symptoms experienced by patient LIKELY TO BE CAUSED BY CANCER, paired with the date or time they started experiencing that symptom. 
@@ -277,8 +277,8 @@ class Prompt:
                 Please return as namedtuples separated by newlines in the following format:
                 RadTest(RadiologyTest='Radiology test', Datetime={'Date or time'}, Site={'Laterality and Site of test'}, Reason={'Symptom or clinical finding for which the test was conducted'}, Result={'Result of the test'})
                 Example:
-                RadTest(RadiologyTest='MRI', Datetime={'01/01/2020'}, Site={'left breast'}, Reason={'lump'}, Result={'abnormal mass'})
-                RadTest(RadiologyTest='PETCT', Datetime={'unknown'}, Site={'left, right breast'}, Reason={'unknown'}, Result={'unknown'})
+                RadTest(RadiologyTest='MRI', Datetime={'01/01/2020'}, Site={'left brain'}, Reason={'lump'}, Result={'abnormal mass'})
+                RadTest(RadiologyTest='PETCT', Datetime={'unknown'}, Site={'left, right brain'}, Reason={'unknown'}, Result={'unknown'})
             """,
 
             'procedure_datetime_site_reason_result': """
@@ -289,8 +289,8 @@ class Prompt:
                 Please return as namedtuples separated by newlines in the following format:
                 Proc(ProcedureName='Procedure identified', Datetime={'Date or time'}, Site={'laterality and site of procedure'}, Reason={'the clinical condition, such as diagnosis, symptom or problem that the procedure was meant to identify or treat'}, Result={'Result of the procedure'})
                 Example:
-                Proc(ProcedureName='Partial mastectomy', Datetime={'unknown'}, Site={'right breast'}, Reason={'lump'}, Result={'invasive carcinoma'})
-                Proc(ProcedureName='mastectomy', Datetime={'01/01/2020'}, Site={'left, right breast'}, Reason={'unknown'}, Result={'unknown'})
+                Proc(ProcedureName='Partial mastectomy', Datetime={'unknown'}, Site={'right brain'}, Reason={'lump'}, Result={'invasive carcinoma'})
+                Proc(ProcedureName='mastectomy', Datetime={'01/01/2020'}, Site={'left, right brain'}, Reason={'unknown'}, Result={'unknown'})
                 DO NOT return radiology tests.
             """,
 
@@ -306,7 +306,7 @@ class Prompt:
             """,
 
             'biomarker_datetime': """
-                For this note, please return all treatment relevant biomarkers identified for the breast cancer of this patient, paired with the date or time for that the characteristic was identified.
+                For this note, please return all treatment relevant biomarkers identified for the cancer of this patient, paired with the date or time for that the characteristic was identified.
                 If the date that identified the characteristic is not present within the note, please return 'unknown'.
                 Please return as namedtuples separated by newlines in the following format:
                 TxBiomarker(Biomarker='biomarker name and result", Datetime={'Date or time identified'})
@@ -317,7 +317,7 @@ class Prompt:
             """,
 
             'histology_datetime': """
-                For this note, please return all morphological histology types identified for breast cancer of the patient, paired with the date that characteristic was identified.
+                For this note, please return all morphological histology types identified for cancer of the patient, paired with the date that characteristic was identified.
                 If the date for the identified characteristic is not present within the note, please return 'unknown'.
                 Please return as namedtuples separated by newlines in the following format:
                 Histo(Histology='Histopathology', Datetime={'Date or time identified'})
@@ -338,7 +338,7 @@ class Prompt:
             """,
 
             'stage_datetime_addtest': """
-                For this note, please return staging for the breast cancer of this patient, paired with the date on which this staging was done.
+                For this note, please return staging for the cancer of this patient, paired with the date on which this staging was done.
                 Do not include any stage indicated by the TNM staging criteria.
                 If additional testing must be done to fully stage the patient, please return this within the same format as described below or return unclear.
                 If the date of first staging is not clear in note, please return 'unknown'.
@@ -349,27 +349,27 @@ class Prompt:
                 StageEnt(Stage='early', Datetime={'unknown'}, AdditionalTesting={'unknown'})
             """,
 
-            'tnm_datetime_addtest': """
-                For this note, please return TNM Staging system for breast cancer.
-                If additional testing must be done to fully stage the patient by TNM staging, please return this within the same format as described below.
-                If the date of first staging is not clear in note, please return 'unknown'.
-                Please return as namedtuples separated by newlines in the following format:
-                TnmEnt(TNM='TNM Stage', Datetime={'Date conducted'}, AdditionalTesting={'test to be done'})
-                Example:
-                TnmEnt(TNM='cT3N1M0', Datetime={'01/01/2020'}, AdditionalTesting={'CT Chest, abdomen, Pelvis'})
-                TnmEnt(TNM='T2N1', Datetime={'unknown'}, AdditionalTesting={'unknown'})
-            """,
+            # 'tnm_datetime_addtest': """
+            #     For this note, please return TNM Staging system for cancer.
+            #     If additional testing must be done to fully stage the patient by TNM staging, please return this within the same format as described below.
+            #     If the date of first staging is not clear in note, please return 'unknown'.
+            #     Please return as namedtuples separated by newlines in the following format:
+            #     TnmEnt(TNM='TNM Stage', Datetime={'Date conducted'}, AdditionalTesting={'test to be done'})
+            #     Example:
+            #     TnmEnt(TNM='cT3N1M0', Datetime={'01/01/2020'}, AdditionalTesting={'CT Chest, abdomen, Pelvis'})
+            #     TnmEnt(TNM='T2N1', Datetime={'unknown'}, AdditionalTesting={'unknown'})
+            # """,
 
-            'grade_datetime_addtest': """
-                For this note, please return the combined Nottingham pathological grade for breast cancer.
-                If additional testing must be done to fully grade the patients tumor, please return this within the same format as described below.
-                If any information for the grade is not clear in the note, please return 'unknown'.
-                Please return as namedtuples separated by newlines in the following format:
-                GradeEnt(Grade='Combined grade', Datetime={'Date conducted'}, AdditionalTesting={'test to be done'})
-                Example:
-                GradeEnt(Grade='3', Datetime={'01/01/2020'}, AdditionalTesting={'unknown'})
-                GradeEnt(Grade='GX', Datetime={'unknown'}, AdditionalTesting={'Number of mitoses'})
-            """,
+            # 'grade_datetime_addtest': """
+            #     For this note, please return the combined Nottingham pathological grade for breast cancer.
+            #     If additional testing must be done to fully grade the patients tumor, please return this within the same format as described below.
+            #     If any information for the grade is not clear in the note, please return 'unknown'.
+            #     Please return as namedtuples separated by newlines in the following format:
+            #     GradeEnt(Grade='Combined grade', Datetime={'Date conducted'}, AdditionalTesting={'test to be done'})
+            #     Example:
+            #     GradeEnt(Grade='3', Datetime={'01/01/2020'}, AdditionalTesting={'unknown'})
+            #     GradeEnt(Grade='GX', Datetime={'unknown'}, AdditionalTesting={'Number of mitoses'})
+            # """,
 
             'prescribed_med_begin_end_reason_continuity_ae': """
                     For this note, please return all cancer-directed medications that were prescribed to the patient.
@@ -401,7 +401,56 @@ class Prompt:
                 DO NOT return medications that were previously prescribed or are currently being prescribed.
                 Do not skip any fields in the given format.
             """,
+            # newly designed
+            'diagnosis_datetime_site_reason_result': """
+                Let's think step by step.
+                First step, please return all cancer-directed diagnostic and interventional procedures where there is a risk for bleeding.
+                Pair these procedures with the date or time that the procedure was performed, laterality and site of the procedure, the clinical condition (e.g. diagnosis, symptom or problem) that the procedure was meant to identify or treat, and the result of the procedure. 
+                Only include the results that are of relevance to an Oncologist.
+                If the information is not present within the note, please return 'unknown'.
+                If any consistency between the doctor's note and surgical pathology report, use the collection date of surgical pathology report as the accurate time point.
+                Please return as namedtuples separated by newlines in the following format:
+                Proc(ProcedureName='Procedure identified', Datetime={'Date or time'}, Site={'laterality and site of procedure'}, Result={'Result of the procedure'})
+                Example of {procedure_output}
+                Proc(ProcedureName='Partial mastectomy', Datetime={'unknown'}, Site={'right brain'},  Result={'invasive carcinoma'})
+                Proc(ProcedureName='mastectomy', Datetime={'01/01/2020'}, Site={'left, right brain'},  Result={'unknown'})
+                Proc(ProcedureName='biopsy', Datetime={'04/01/2016'}, Site={'left, right brain'},  Result={'negative'})
+                DO NOT return radiology tests.
+            
+                Second step, please return all Radiology studies conducted for the patient, paired with the date or time when the study was performed, site of the study with its laterality, the symptom or clinical finding that the test was conducted for, and the results.
+                Only include the results that are of relevance to an Oncologist.
+                If any information is not present within the note, please return 'unknown'.
+                If any consistency between the doctor's note and radiology scan, use radiology scan conduction time as the accurate time point.
+                Please return as named tuples separated by newlines in the following format:
+                RadTest(RadiologyTest='Radiology test', Datetime={'Date or time'}, Site={'Laterality and Site of test'}, Result={'Result of the test'})
+                Example of {radiology_output}
+                RadTest(RadiologyTest='MRI', Datetime={'01/01/2020'}, Site={'left brain'},  Result={'abnormal mass'})
+                RadTest(RadiologyTest='PETCT', Datetime={'unknown'}, Site={'left, right brain'},  Result={'unknown'})
+                RadTest(RadiologyTest='mammogram', Datetime={'06/09/16'}, Site={'right brain'},  Result={'negative'})
+                
+                Third step, now, based on the extracted procedure and radiology you previously extracted:
+                                  Procedure: {procedure_output}
+                                  Radiology: {radiology_output}
 
+                                  Let's think step by step.
+                                  1. Review the **procedure** information that was extracted. 
+                                  2. Review the **radiology** information that was extracted. 
+                                  3. REMOVE information NOT relevant to Patient's CANCER.
+                                  4. REMOVE information that show results are unknown or  patient is normal or tumor is negative. 
+                                  5. Now, using these dates as anchors, infer the INITIAL cancer diagnosis date from the provided clinical note. 
+
+                                  The first cancer diagnosis date SHOULD HAVE day, month, and year, based only on the **procedure and radiology** data. If the
+                                  date you identify shows tumor is suspicious, NOT determined, return "unknown"
+
+                                  If the First diagnosis date is NOT present, return 'unknown'. DO NOT RETURN Date of metastatic cancer.
+
+                                  RETURN the diagnosis date in the FOLLOWING format:
+                                  DiagnosisDate(Datetime={{month/day/year}}, Reason={{Explain how the procedure and radiology findings support this conclusion}}).
+
+                                  Example: DiagnosisDate(Datetime={{'08/13/2020'}}, Reason={{'Procedure indicated possible malignancy, and MRI confirmed the presence of a tumor'}}).
+                
+                
+            """
         }
 
     def yield_inference_subtype_prompt(self, inference_type):
