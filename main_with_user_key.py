@@ -10,11 +10,11 @@ import re
 
 load_dotenv()
 
-st.set_page_config(
-    menu_items={
-        "Report a bug": "https://bugs.openai.com/browse",
-    }
-)
+# st.set_page_config(
+#     menu_items={
+#         "Report a bug": "https://bugs.openai.com/browse",
+#     }
+# )
 
 with st.sidebar.expander("About ", expanded=True):
     st.markdown(
@@ -70,7 +70,7 @@ if not open_ai_key:
 
 client = OpenAI(api_key=open_ai_key)
 
-models = ["gpt-4o", "gpt-4o-2024-08-06", "gpt-4o-2024-05-13", "gpt-4o-mini"]
+models = ["gpt-4o", "gpt-4o-mini","gpt-4"]
 model_name = st.sidebar.radio("Pick a model", options=models, index=0)
 
 prompt_obj = Prompt()
@@ -103,77 +103,70 @@ if reset_button:
 #      """
 
 a = """
-
-History of Present Illness
-Mrs. Z is a 69yo RHW with a history of low grade follicular lymphoma and carcinoma in situ of the
-tongue, who presents for follow-up of multifocal GBM s/p resection of L frontal lesion 10/13/15 (NYU),
-RT/TMZ (completed 12/2015), 12 cycles of adjuvant TMZ to 12/30/16, with progression 9/9/19 s/p reRT/
-TMZ 40Gy/15fx 10/15-11/4/19.
-Regarding her oncologic history, she was originally diagnosed with low grade follicular lymphoma around
-2004, initially treated with chemotherapy, but without a full remission. She was seen at NYU in 2014
-where she was noted to have small, stable, residual disease in the left iliac area. Her initial treatment
-course also involved chronic steroid use resulting in bilateral aseptic necrosis of her hips necessitating b/I
-hip replacements. She was also diagnosed with squamous cell carcinoma of the tongue in situ vs. Severe
-dysplasia s/p resection x2 by Dr. Myssiorak at NYU.
-First presented with right-sided weakness and gait imbalance beginning in early Oct 2015 in addition to
-handwriting difficulty. Had a seizure (R arm shaking with language trouble) which prompted MRI brain
-which revealed L frontal enhancing lesion and R occipital FLAIR lesion. Resected 10/13/15 by Dr. Jafar at
-NYU; hemiparetic post-op and spent two weeks at Rusk Rehab with improvement. RT/TMZ (completed
-12/2015), and 12 cycles of adjuvant TMZ through 12/30/16.
-Since that time, MRls have remained stable off treatment without evidence of recurrent disease. Course
-complicated by medical comorbidities and depression impairing functional status.
-Patient underwent T12 kyphoplasty- 2/14/17 2/2 pain following a fall at home with improvement in lower
-back pain. She received steroid injection to spine with minimal relief. In July 2018 she required a 3-4 week inpatient rehab stay for general debility. Following discharge, she
-continued in home rehab 2-3 times per week with improvement in strength. She was clinically stable, with
-continued primarily right leg weakness. Significant back pain limited her mobility and motivation to
-exercise. Husband expressed frustration at this lack of exercise -- the interplay between back pain and the
-need to mobilize was an ongoing theme through the last 2018 and early 2019 visits, though she remained
-clinically and radiographically stable from the tumor standpoint during this time.
-In early 5/2019, the patient developed increased weakness and difficulty with transferring over several
-weeks, and was admitted 5/17/19 for PNA-- she was treated with IV antibiotics, and then sent to UES
-Rehab where she stayed for a month, discharging home at the end of July 2019. Despite some
-improvement in strength at rehab, her gait was definitively worse.
-MRI 9/9/19 identified L frontal enhancement with FOG-avidity on 9/11/19 FOG-PET, concerning for
-progression. Close follow-up MRI 10/6/19 demonstrated evidence of further progression, so she was
-treated with re-RT/TMZ 40Gy/15fx 10/15-11/4/19. Post-RT course marked by increasing confusion and
-decreased mobility starting 11/8/19. Dexamethasone was increased from 1 mg daily to 4 mg daily then to
-4 mg TIO on 11/18/19, with subtle improvement in cognition; dex subsequently tapered to 4 mg BID on
-11/25/19. Post-RT MRI 12/2/19 with increase in enhancement consistent with post-radiation treatment
-effect.
-She returns today in follow-up with close repeat MRI. She was hospitalized for a brief time in the interim
-for pneumonia and treated with antibiotics (doxycycline) that she just completed yesterday 12/29/19. She
-remains on dex 4 mg BID, and ran out of Bactrim yesterday (refilled today). Clinically she has declined
-over the past month with continued bilateral lower extremity weakness, incontinence (initially endorsed
-groin numbness, but later denied this), and short-term memory loss. She requires two person assist for
-transfers and is essentially bed-bound.
-Denies headaches, nausea/vomiting, vision loss, facial droop, hearing loss, vertigo, speech trouble, or
-seizures.
-Assessment and Plan
-Mrs. Z is a 69yo RHW with a history of low grade follicular lymphoma and carcinoma in situ of the
-tongue, who presents for follow-up of multifocal GBM s/p resection of L frontal lesion 10/13/15 (NYU),
-RT/TMZ (completed 12/2015), 12 cycles of adjuvant TMZ to 12/30/16, with progression 9/9/19 s/p reRT/
-TMZ 40Gy/15fx 10/15-11/4/19. The post-RT MRI on 12/2/19 showed treatment-related inflammatory
-changes; she returns today in close follow-up with repeat scan, and has had significant functional decline
-over the past month -- worse short-term memory, increased lethargy, increased generalized weakness
-(worse on the R) and non-ambulatory, requiring 2 person assist for transfers. The patient also endorsed
-significant urinary incontinence; while initially endorsing groin numbness, retracted this later. MRI brain
-today 12/30/19 shows improvement in the treated L frontal enhancing lesion, but a new out-of-field focus
-of enhancement in the L basal ganglia.
-We discussed at length her present situation, with the MRI showing a mixed response. We discussed the
-pros/cons of taking a more comfort-directed approach (hospice) vs that of an aggressive approach, and
-discussed that ultimately the decision to follow either rested with the personal wishes of the patient (and
-her husband), and that either option was fully reasonable at this stage. We reiterated that this was a
-tumor for which we had no cure, and that continued aggressive treatment did not guarantee response or
-prolonged survival. We recommended that she and her husband discuss the direction in which she
-wanted to take things (whether to move towards comfort or to move ahead with aggressive treatments).
-She will think about it, and in the meantime RTC with another scan in 4 weeks.
-1) Glioblastoma, IDH-wildtype- RTC with MRI brain tumor advanced in 1 month
-2) Seizures- continue Keppra 1000mg BID. No seizures since last visit.
-3) Steroids- dexamethasone 4 mg BID. On Protonix. Re-ordered Bactrim DS 1 tab MWF.
-4) Rehab- would benefit physically/emotionally from ongoing rehabilitation (patient's husband hiring
-therapists at home)
-5) Obesity- follow-up with primary care physician.
-6) Frontal lobe syndrome- can consider Ritalin in the future
+History of Present Illness 
+Glioblastoma: WHO grade IV, IDH wild-type by IHC, ATRX preserved, p53 scattered, Ki67 focally up to 
+20%, MGMT pending 
+Oncomine: PTEN, FGFR3-TACC3 fusion, EGFR amplification 
+Foundation not done 
+71-year-old Cantonese-speaking woman with right frontal GBM (IDH wild-type, MGMT not yet resulted) s/p 
+resection by Dr. Schwartz on 12/18/19, s/p RT/TMZ (40 Gy in 15 fractions, 1/15/20-2/5/20) presenting for 
+follow-up. 
+Regarding her neuro-oncologic history, patient was had general memory loss for approximately 1 year 
+attributed to aging. In the month prior to presentation, memory impairment dramatically worsened to the 
+point that patient was unable to find her way home after leaving the house. She was also noted to be more 
+somnolent, falling asleep frequently including during meals. She saw an outside neurologist who 
+performed an MRI brain which revealed a left frontal mass lesion with surrounding edema. He was 
+admitted to WCMC on 12/13/19. MRI brain with and without contrast performed 12/14/19 revealed an 
+enhancing right frontal mass crossing the corpus callosum with surrounding vasogenic edema as well as 
+non-enhancing T2/FLAIR hyperintense lesions in the right precentral gyrus, left frontal region, and right 
+thalamus. She underwent right frontal craniotomy and resection of the right frontal mass on 12/18/19 by 
+Dr. Schwartz; pathology revealed GBM (IDH wild-type by IHC, MGMT promoter methylation status 
+pending). Post-operatively, she required insulin intermittently for steroid-induced hyperglycemia. PT/OT 
+recommended discharge to SAR, but family requested that patient be discharged home with 24-hour 
+supervision. 
+Patient underwent hypofractionated course of RT/TMZ (40 Gy in 15 fractions) from 1/15/20-2/5/20 with Dr. 
+Knisely. The decision was made not to pursue Foundation Medicine testing on tumor tissue given patient's 
+advanced age, neurologic deficits, and frailty. Daughter reported that patient had difficulty standing from a 
+seated position with moon facies on 1/31/20; she was instructed to stop dexamethasone. However, at 
+Radiation Oncology appointment on 2/5/20, she was still taking dexamethasone 1 mg daily; she was 
+instructed to take 1 mg qod for 1 week then stop dexamethasone. 
+Today, patient presents with her daughter for follow-up. Daughter states that patient had fever and cough 
+1-2 weeks ago and that she went to her family doctor; symptoms are now improved. She has had no 
+recent travel outside the country nor contact with anyone who has traveled outside the country recently. 
+Daughter feels that patient's legs are weaker and that she has had hair loss following RT. She is no longer 
+taking dexamethasone; her face and legs were swollen on dexamethasone, but swelling has now improved. Patient reports pain in her left leg. Cognitively, daughter feels that patient's memory/thicking are 
+possibly slightly worse; when she wakes up, she is more confused, but confusion improves throughout the 
+day. She used to be able to write her name but now is unable to do so. 
+Assessment & Plan 
+71-year-old Cantonese-speaking woman with right frontal GBM (IDH wild-type, MGMT not yet resulted) s/p 
+resection by Dr. Schwartz on 12/18/19, s/p RT/TMZ (40 Gy in 15 fractions, 1/15/20-2/5/20) presenting for 
+follow-up. Neurologic exam at this time remains notable for disorientation to time, difficulty following 
+complex commands, and marked bradyphrenia with psychomotor slowing as well as shuffling gait 
+necessitating a rolling walker. MRI brain performed today approximately 1 month after the completion of 
+RT reveals new nodular enhancement in the left frontal lobe distant from the initial resection cavity as well 
+as new nodular enhancement along the margins of the resection site extending along the right lateral 
+ventricle and involving the corpus callosum concerning for progression of disease. At this time, given the 
+rapidity of her disease progression, and given her frailty and significant cognitive/functional impairment, 
+further treatment carries a significant risk of adversely affecting her quality of life while offering little benefit. 
+We discussed that she has multifocal disease which is not amenable to surgery or further RT, and that 
+there are chemotherapies that can be trialed, but that these treatments are unlikely to be significantly
+effective or improve her quality of life while posing a substantial risk of side effects given her neurologic 
+deficits and frailty. Given that the risks of further treatment outweigh any potential benefit, would 
+recommend focusing care on comfort and pursuing home hospice. We discussed that, at some point, her 
+tumor would grow further and end her life; we discussed that hospice services could help treat any 
+symptoms she may have and help maintain her comfort and quality of life. Patient's daughter expressed 
+understanding and stated that, rather than having our office make referrals to hospice now, she would like 
+to set up hospice through the patient's family doctor. We encouraged patient's daughter to call us, as we 
+are happy to assist in any way possible. 
+Plan: 
+1) Right frontal/multifocal GBM: rapid progression of disease 
+-Recommend pursuing hospice at this time as above. Daughter would like to set up hospice through 
+patient's family doctor and will call if they require any assistance 
+-No further MRls 
+2) Steroids: Off steroids as of 2/2020, no indication to re-start 
+3) AEDs: No history of seizures. 
+-Continue Keppra 500mg bid for seizure prevention 
+4) Cognitive impairment, frailty: Recommend home hospice as above
 """
 
 if  st.button('Patient data example'):

@@ -27,7 +27,6 @@ class Prompt:
                                "Answer as concisely as possible." \
                                "Use '\'' for special quotation characters." \
                                "Do not return any information not present in the note. " \
-                               "Do not return explanations." \
 
 
         # TODO: add sdoh details
@@ -435,12 +434,11 @@ class Prompt:
                                   Let's think step by step.
                                   1. Review the **procedure** information that was extracted. 
                                   2. Review the **radiology** information that was extracted. 
-                                  3. REMOVE information NOT relevant to Patient's CANCER.
-                                  4. REMOVE information that show results are unknown or  patient is normal or tumor is negative. 
-                                  5. Now, using these dates as anchors, infer the INITIAL cancer diagnosis date from the provided clinical note. 
+                                  3. REMOVE information NOT relevant to Patient's diagnosis of cancer. 
+                                  4. Now, using these dates as anchors, infer the INITIAL cancer diagnosis date.
 
-                                  The first cancer diagnosis date SHOULD HAVE day, month, and year, based only on the **procedure and radiology** data. If the
-                                  date you identify shows tumor is suspicious, NOT determined, return "unknown"
+                                  The first cancer diagnosis date SHOULD IN THE FORMAT OF MONTH/DAY/YEAR, based only on the **procedure and radiology** data. If
+                                  the date DO NOT have month, day or year, DO NOT GUESS, return Reason as "No Exact Date".
 
                                   If the First diagnosis date is NOT present, return 'unknown'. DO NOT RETURN Date of metastatic cancer.
 
