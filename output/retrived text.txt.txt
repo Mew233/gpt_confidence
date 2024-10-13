@@ -1,0 +1,3087 @@
+Page Counts per Category for Each Patient:
+
+Patient PM1005:
+  Genomic Test: 1 pages
+  Surgical Pathology: 4 pages
+  Radiology Test: 8 pages
+  Encounter Note: 7 pages
+
+Patient PM1011:
+  Genomic Test: 10 pages
+  Surgical Pathology: 4 pages
+  Encounter Note: 5 pages
+  Radiology Test: 6 pages
+
+Patient PM1025:
+  Genomic Test: 14 pages
+  Surgical Pathology: 5 pages
+  Radiology Test: 13 pages
+  Encounter Note: 6 pages
+
+Patient PM1026:
+  Surgical Pathology: 4 pages
+  Radiology Test: 24 pages
+  Encounter Note: 5 pages
+
+Patient PM1031:
+  Radiology Test: 13 pages
+  Encounter Note: 6 pages
+
+Patient PM1040:
+  Genomic Test: 10 pages
+  Surgical Pathology: 7 pages
+  Encounter Note: 6 pages
+  Radiology Test: 3 pages
+
+Patient PM1074:
+  Radiology Test: 11 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 18 pages
+  Encounter Note: 6 pages
+
+Patient PM1090:
+  Radiology Test: 4 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM1091:
+  Radiology Test: 21 pages
+  Genomic Test: 28 pages
+  Surgical Pathology: 6 pages
+  Encounter Note: 8 pages
+
+Patient PM1095:
+  Radiology Test: 1 pages
+  Surgical Pathology: 3 pages
+  Encounter Note: 6 pages
+
+Patient PM1124:
+  Genomic Test: 33 pages
+  Radiology Test: 10 pages
+  Encounter Note: 10 pages
+
+Patient PM1128:
+  Genomic Test: 13 pages
+  Surgical Pathology: 6 pages
+  Radiology Test: 4 pages
+  Encounter Note: 6 pages
+
+Patient PM1130:
+  Encounter Note: 6 pages
+  Genomic Test: 1 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1139:
+  Encounter Note: 5 pages
+  Genomic Test: 10 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1141:
+  Radiology Test: 13 pages
+  Surgical Pathology: 15 pages
+  Encounter Note: 6 pages
+
+Patient PM1153:
+  Encounter Note: 19 pages
+  Genomic Test: 10 pages
+  Radiology Test: 12 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1156:
+  Encounter Note: 13 pages
+  Genomic Test: 10 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 8 pages
+
+Patient PM1180:
+  Radiology Test: 9 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM1185:
+  Encounter Note: 14 pages
+  Genomic Test: 54 pages
+  Radiology Test: 9 pages
+  Surgical Pathology: 14 pages
+
+Patient PM1198:
+  Encounter Note: 15 pages
+  Genomic Test: 10 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1202:
+  Encounter Note: 11 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 12 pages
+
+Patient PM1206:
+  Radiology Test: 5 pages
+  Surgical Pathology: 5 pages
+  Encounter Note: 14 pages
+
+Patient PM1231:
+  Encounter Note: 20 pages
+  Genomic Test: 11 pages
+  Radiology Test: 5 pages
+  Surgical Pathology: 11 pages
+
+Patient PM1238:
+  Genomic Test: 22 pages
+  Encounter Note: 12 pages
+  Radiology Test: 5 pages
+  Surgical Pathology: 9 pages
+
+Patient PM1241:
+  Encounter Note: 24 pages
+  Genomic Test: 10 pages
+  Radiology Test: 14 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1242:
+  Encounter Note: 8 pages
+  Genomic Test: 10 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1250:
+  Encounter Note: 9 pages
+  Genomic Test: 10 pages
+  Radiology Test: 9 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1251:
+  Encounter Note: 6 pages
+  Radiology Test: 2 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1252:
+  Encounter Note: 17 pages
+  Genomic Test: 10 pages
+  Radiology Test: 9 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1253:
+  Genomic Test: 10 pages
+  Surgical Pathology: 6 pages
+  Radiology Test: 3 pages
+  Encounter Note: 5 pages
+
+Patient PM1258:
+  Radiology Test: 11 pages
+  Encounter Note: 12 pages
+  Genomic Test: 10 pages
+  Surgical Pathology: 3 pages
+
+Patient PM1265:
+  Encounter Note: 25 pages
+  Genomic Test: 19 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 9 pages
+
+Patient PM1286:
+  Encounter Note: 5 pages
+  Genomic Test: 1 pages
+  Radiology Test: 11 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1301:
+  Encounter Note: 9 pages
+  Radiology Test: 1 pages
+  Surgical Pathology: 8 pages
+
+Patient PM1302:
+  Encounter Note: 8 pages
+  Genomic Test: 10 pages
+  Radiology Test: 4 pages
+  Surgical Pathology: 3 pages
+
+Patient PM1309:
+  Encounter Note: 5 pages
+  Genomic Test: 10 pages
+  Radiology Test: 8 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1327:
+  Genomic Test: 34 pages
+  Encounter Note: 6 pages
+  Radiology Test: 8 pages
+  Surgical Pathology: 10 pages
+
+Patient PM1330:
+  Encounter Note: 4 pages
+  Genomic Test: 10 pages
+  Radiology Test: 10 pages
+  Surgical Pathology: 8 pages
+
+Patient PM1333:
+  Genomic Test: 52 pages
+  Surgical Pathology: 8 pages
+  Molecular Oncology: 17 pages
+  Encounter Note: 9 pages
+
+Patient PM1343:
+  Encounter Note: 4 pages
+  Genomic Test: 10 pages
+  Radiology Test: 1 pages
+  Surgical Pathology: 8 pages
+
+Patient PM1348:
+  Surgical Pathology: 10 pages
+  Genomic Test: 31 pages
+  Radiology Test: 3 pages
+  Encounter Note: 5 pages
+
+Patient PM1356:
+  Encounter Note: 22 pages
+  Genomic Test: 10 pages
+  Radiology Test: 4 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1375:
+  Encounter Note: 21 pages
+  Genomic Test: 23 pages
+  Radiology Test: 9 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1380:
+  Encounter Note: 4 pages
+  Genomic Test: 72 pages
+  Radiology Test: 5 pages
+  Surgical Pathology: 4 pages
+
+Patient PM1395:
+  Encounter Note: 5 pages
+  Genomic Test: 10 pages
+  Radiology Test: 5 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1401:
+  Encounter Note: 9 pages
+  Genomic Test: 10 pages
+  Radiology Test: 10 pages
+  Surgical Pathology: 2 pages
+
+Patient PM1409:
+  Encounter Note: 12 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 38 pages
+  Radiology Test: 5 pages
+
+Patient PM1415:
+  Encounter Note: 10 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 22 pages
+  Radiology Test: 10 pages
+
+Patient PM1422:
+  Radiology Test: 2 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 29 pages
+  Encounter Note: 6 pages
+
+Patient PM1437:
+  Radiology Test: 3 pages
+  Surgical Pathology: 8 pages
+  Genomic Test: 10 pages
+  Encounter Note: 10 pages
+
+Patient PM1443:
+  Radiology Test: 17 pages
+  Surgical Pathology: 8 pages
+  Genomic Test: 71 pages
+  Molecular Oncology: 8 pages
+  Encounter Note: 6 pages
+
+Patient PM1444:
+  Radiology Test: 6 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 10 pages
+  Encounter Note: 9 pages
+
+Patient PM1448:
+  Surgical Pathology: 4 pages
+  Genomic Test: 33 pages
+  Radiology Test: 6 pages
+  Encounter Note: 8 pages
+
+Patient PM1454:
+  Radiology Test: 4 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 42 pages
+  Encounter Note: 7 pages
+
+Patient PM1466:
+  Radiology Test: 6 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 38 pages
+  Encounter Note: 8 pages
+
+Patient PM1481:
+  Radiology Test: 7 pages
+  Encounter Note: 10 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 30 pages
+
+Patient PM1487:
+  Radiology Test: 8 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 40 pages
+  Encounter Note: 6 pages
+
+Patient PM1490:
+  Radiology Test: 7 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 3 pages
+  Encounter Note: 6 pages
+
+Patient PM1491:
+  Radiology Test: 5 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 40 pages
+  Encounter Note: 8 pages
+
+Patient PM1508:
+  Surgical Pathology: 12 pages
+  Radiology Test: 8 pages
+  Genomic Test: 85 pages
+  Molecular Oncology: 9 pages
+  Encounter Note: 6 pages
+
+Patient PM1509:
+  Radiology Test: 6 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 27 pages
+  Encounter Note: 6 pages
+
+Patient PM1521:
+  Surgical Pathology: 4 pages
+  Genomic Test: 26 pages
+  Molecular Oncology: 2 pages
+  Radiology Test: 3 pages
+  Encounter Note: 6 pages
+
+Patient PM1556:
+  Radiology Test: 9 pages
+  Encounter Note: 13 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 8 pages
+
+Patient PM1559:
+  Surgical Pathology: 9 pages
+  Radiology Test: 13 pages
+  Genomic Test: 23 pages
+  Encounter Note: 17 pages
+
+Patient PM1568:
+  Radiology Test: 12 pages
+  Encounter Note: 49 pages
+  Surgical Pathology: 9 pages
+  Genomic Test: 33 pages
+
+Patient PM1589:
+  Radiology Test: 9 pages
+  Surgical Pathology: 8 pages
+  Genomic Test: 35 pages
+  Molecular Oncology: 2 pages
+  Encounter Note: 6 pages
+
+Patient PM1615:
+  Encounter Note: 5 pages
+  Genomic Test: 11 pages
+  Radiology Test: 14 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1643:
+  Radiology Test: 3 pages
+  Surgical Pathology: 7 pages
+  Genomic Test: 17 pages
+  Encounter Note: 8 pages
+
+Patient PM1644:
+  Radiology Test: 9 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 20 pages
+  Encounter Note: 5 pages
+
+Patient PM1646:
+  Surgical Pathology: 5 pages
+  Genomic Test: 19 pages
+  Radiology Test: 10 pages
+  Encounter Note: 8 pages
+
+Patient PM1647:
+  Radiology Test: 8 pages
+  Surgical Pathology: 9 pages
+  Genomic Test: 62 pages
+  Molecular Oncology: 11 pages
+  Encounter Note: 7 pages
+
+Patient PM1670:
+  Radiology Test: 8 pages
+  Surgical Pathology: 10 pages
+  Genomic Test: 29 pages
+  Molecular Oncology: 9 pages
+  Encounter Note: 6 pages
+
+Patient PM1703:
+  Surgical Pathology: 10 pages
+  Genomic Test: 27 pages
+  Molecular Oncology: 9 pages
+  Encounter Note: 7 pages
+
+Patient PM1716:
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 6 pages
+  Radiology Test: 2 pages
+  Encounter Note: 8 pages
+
+Patient PM1755:
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 54 pages
+  Radiology Test: 3 pages
+  Encounter Note: 6 pages
+
+Patient PM1760:
+  Radiology Test: 11 pages
+  Surgical Pathology: 12 pages
+  Molecular Oncology: 12 pages
+  Encounter Note: 6 pages
+
+Patient PM1763:
+  Surgical Pathology: 5 pages
+  Radiology Test: 5 pages
+  Encounter Note: 5 pages
+
+Patient PM1769:
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 30 pages
+  Radiology Test: 11 pages
+  Encounter Note: 7 pages
+
+Patient PM1771:
+  Encounter Note: 11 pages
+  Surgical Pathology: 9 pages
+  Molecular Oncology: 8 pages
+  Genomic Test: 5 pages
+  Radiology Test: 8 pages
+
+Patient PM1774:
+  Genomic Test: 45 pages
+  Molecular Oncology: 15 pages
+  Encounter Note: 14 pages
+  Radiology Test: 7 pages
+  Surgical Pathology: 9 pages
+
+Patient PM1775:
+  Surgical Pathology: 14 pages
+  Genomic Test: 51 pages
+  Molecular Oncology: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM1777:
+  Radiology Test: 7 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 11 pages
+  Encounter Note: 7 pages
+
+Patient PM1782:
+  Encounter Note: 23 pages
+  Radiology Test: 20 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 20 pages
+
+Patient PM1791:
+  Surgical Pathology: 8 pages
+  Genomic Test: 30 pages
+  Molecular Oncology: 4 pages
+  Encounter Note: 5 pages
+
+Patient PM1793:
+  Encounter Note: 7 pages
+  Genomic Test: 11 pages
+  Radiology Test: 8 pages
+  Molecular Oncology: 4 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1801:
+  Molecular Oncology: 10 pages
+  Genomic Test: 3 pages
+  Radiology Test: 18 pages
+  Encounter Note: 17 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1816:
+  Genomic Test: 3 pages
+  Molecular Oncology: 6 pages
+  Encounter Note: 8 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1821:
+  Encounter Note: 16 pages
+  Surgical Pathology: 9 pages
+  Radiology Test: 3 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 56 pages
+
+Patient PM1822:
+  Radiology Test: 8 pages
+  Encounter Note: 28 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 11 pages
+  Genomic Test: 20 pages
+
+Patient PM1826:
+  Radiology Test: 6 pages
+  Surgical Pathology: 6 pages
+  Molecular Oncology: 6 pages
+  Encounter Note: 5 pages
+
+Patient PM1830:
+  Encounter Note: 8 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 36 pages
+  Radiology Test: 6 pages
+
+Patient PM1836:
+  Encounter Note: 9 pages
+  Genomic Test: 11 pages
+  Radiology Test: 7 pages
+  Molecular Oncology: 4 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1846:
+  Genomic Test: 3 pages
+  Molecular Oncology: 6 pages
+  Radiology Test: 2 pages
+  Encounter Note: 3 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1858:
+  Radiology Test: 20 pages
+  Surgical Pathology: 5 pages
+  Encounter Note: 24 pages
+  Molecular Oncology: 11 pages
+  Genomic Test: 1 pages
+
+Patient PM1864:
+  Encounter Note: 5 pages
+  Genomic Test: 11 pages
+  Radiology Test: 6 pages
+  Molecular Oncology: 4 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1865:
+  Encounter Note: 5 pages
+  Genomic Test: 11 pages
+  Radiology Test: 5 pages
+  Molecular Oncology: 5 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1879:
+  Radiology Test: 23 pages
+  Encounter Note: 4 pages
+  Genomic Test: 18 pages
+  Molecular Oncology: 5 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1887:
+  Encounter Note: 32 pages
+  Radiology Test: 11 pages
+  Surgical Pathology: 6 pages
+  Molecular Oncology: 13 pages
+  Genomic Test: 23 pages
+
+Patient PM1894:
+  Genomic Test: 10 pages
+  Molecular Oncology: 15 pages
+  Radiology Test: 9 pages
+  Encounter Note: 4 pages
+  Surgical Pathology: 10 pages
+
+Patient PM1903:
+  Genomic Test: 16 pages
+  Molecular Oncology: 3 pages
+  Encounter Note: 6 pages
+  Radiology Test: 7 pages
+  Surgical Pathology: 6 pages
+
+Patient PM1911:
+  Molecular Oncology: 13 pages
+  Genomic Test: 2 pages
+  Radiology Test: 11 pages
+  Encounter Note: 7 pages
+  Surgical Pathology: 7 pages
+
+Patient PM1918:
+  Genomic Test: 17 pages
+  Molecular Oncology: 11 pages
+  Radiology Test: 4 pages
+  Encounter Note: 4 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1928:
+  Radiology Test: 20 pages
+  Encounter Note: 29 pages
+  Surgical Pathology: 7 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 30 pages
+
+Patient PM1935:
+  Genomic Test: 16 pages
+  Encounter Note: 5 pages
+  Radiology Test: 6 pages
+  Molecular Oncology: 5 pages
+  Surgical Pathology: 5 pages
+
+Patient PM1950:
+  Surgical Pathology: 6 pages
+  Genomic Test: 32 pages
+  Molecular Oncology: 10 pages
+  Radiology Test: 5 pages
+  Encounter Note: 5 pages
+
+Patient PM1957:
+  Encounter Note: 16 pages
+  Surgical Pathology: 9 pages
+  Molecular Oncology: 11 pages
+  Radiology Test: 10 pages
+  Genomic Test: 38 pages
+
+Patient PM200:
+  Encounter Note: 4 pages
+  Radiology Test: 2 pages
+  Surgical Pathology: 7 pages
+
+Patient PM2028:
+  Molecular Oncology: 12 pages
+  Genomic Test: 2 pages
+  Radiology Test: 8 pages
+  Encounter Note: 10 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2032:
+  Molecular Oncology: 11 pages
+  Genomic Test: 2 pages
+  Radiology Test: 6 pages
+  Encounter Note: 5 pages
+  Surgical Pathology: 11 pages
+
+Patient PM2033:
+  Molecular Oncology: 11 pages
+  Genomic Test: 19 pages
+  Radiology Test: 11 pages
+  Encounter Note: 4 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2047:
+  Molecular Oncology: 11 pages
+  Genomic Test: 23 pages
+  Radiology Test: 13 pages
+  Encounter Note: 16 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2062:
+  Molecular Oncology: 11 pages
+  Genomic Test: 23 pages
+  Radiology Test: 8 pages
+  Encounter Note: 4 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2090:
+  Molecular Oncology: 11 pages
+  Radiology Test: 10 pages
+  Encounter Note: 7 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2096:
+  Molecular Oncology: 11 pages
+  Radiology Test: 2 pages
+  Encounter Note: 4 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2102:
+  Molecular Oncology: 8 pages
+  Genomic Test: 14 pages
+  Radiology Test: 11 pages
+  Encounter Note: 12 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2106:
+  Molecular Oncology: 8 pages
+  Genomic Test: 24 pages
+  Radiology Test: 7 pages
+  Encounter Note: 5 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2110:
+  Molecular Oncology: 7 pages
+  Genomic Test: 24 pages
+  Radiology Test: 11 pages
+  Encounter Note: 13 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2118:
+  Radiology Test: 8 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 31 pages
+  Encounter Note: 7 pages
+
+Patient PM2120:
+  Encounter Note: 54 pages
+  Surgical Pathology: 10 pages
+  Molecular Oncology: 10 pages
+  Radiology Test: 15 pages
+  Genomic Test: 36 pages
+
+Patient PM2130:
+  Encounter Note: 23 pages
+  Radiology Test: 8 pages
+  Surgical Pathology: 18 pages
+  Molecular Oncology: 17 pages
+  Genomic Test: 24 pages
+
+Patient PM2173:
+  Radiology Test: 8 pages
+  Surgical Pathology: 8 pages
+  Genomic Test: 47 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 7 pages
+
+Patient PM2190:
+  Radiology Test: 10 pages
+  Surgical Pathology: 10 pages
+  Molecular Oncology: 6 pages
+  Genomic Test: 34 pages
+  Encounter Note: 6 pages
+
+Patient PM2191:
+  Molecular Oncology: 11 pages
+  Radiology Test: 6 pages
+  Encounter Note: 3 pages
+  Genomic Test: 34 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2195:
+  Encounter Note: 11 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 33 pages
+  Molecular Oncology: 8 pages
+
+Patient PM2200:
+  Radiology Test: 27 pages
+  Encounter Note: 18 pages
+  Surgical Pathology: 7 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 26 pages
+
+Patient PM2205:
+  Radiology Test: 14 pages
+  Encounter Note: 50 pages
+  Surgical Pathology: 7 pages
+  Molecular Oncology: 9 pages
+  Genomic Test: 32 pages
+
+Patient PM2216:
+  Radiology Test: 21 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 8 pages
+  Encounter Note: 7 pages
+  Genomic Test: 30 pages
+
+Patient PM2229:
+  Encounter Note: 29 pages
+  Radiology Test: 11 pages
+  Surgical Pathology: 14 pages
+  Molecular Oncology: 8 pages
+  Genomic Test: 23 pages
+
+Patient PM2236:
+  Molecular Oncology: 8 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 8 pages
+
+Patient PM2242:
+  Surgical Pathology: 8 pages
+  Genomic Test: 25 pages
+  Molecular Oncology: 13 pages
+  Radiology Test: 10 pages
+  Encounter Note: 7 pages
+
+Patient PM2257:
+  Molecular Oncology: 8 pages
+  Encounter Note: 6 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2267:
+  Surgical Pathology: 5 pages
+  Genomic Test: 27 pages
+  Molecular Oncology: 8 pages
+  Radiology Test: 4 pages
+  Encounter Note: 6 pages
+
+Patient PM227:
+  Encounter Note: 8 pages
+  Radiology Test: 17 pages
+  Surgical Pathology: 3 pages
+
+Patient PM2271:
+  Encounter Note: 22 pages
+  Surgical Pathology: 10 pages
+  Molecular Oncology: 7 pages
+  Genomic Test: 30 pages
+  Radiology Test: 6 pages
+
+Patient PM2291:
+  Encounter Note: 27 pages
+  Surgical Pathology: 8 pages
+  Molecular Oncology: 8 pages
+  Genomic Test: 5 pages
+
+Patient PM2295:
+  Surgical Pathology: 6 pages
+  Genomic Test: 25 pages
+  Molecular Oncology: 11 pages
+  Radiology Test: 7 pages
+  Encounter Note: 5 pages
+
+Patient PM2296:
+  Encounter Note: 13 pages
+  Surgical Pathology: 14 pages
+  Molecular Oncology: 8 pages
+  Genomic Test: 29 pages
+  Radiology Test: 4 pages
+
+Patient PM2354:
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 27 pages
+  Encounter Note: 7 pages
+  Radiology Test: 6 pages
+
+Patient PM2356:
+  Radiology Test: 6 pages
+  Surgical Pathology: 15 pages
+  Genomic Test: 35 pages
+  Molecular Oncology: 12 pages
+  Encounter Note: 11 pages
+
+Patient PM2369:
+  Radiology Test: 9 pages
+  Surgical Pathology: 3 pages
+  Molecular Oncology: 11 pages
+  Genomic Test: 10 pages
+  Encounter Note: 7 pages
+
+Patient PM2397:
+  Radiology Test: 9 pages
+
+Patient PM2417:
+  Radiology Test: 12 pages
+  Surgical Pathology: 2 pages
+  Molecular Oncology: 11 pages
+  Genomic Test: 25 pages
+  Encounter Note: 6 pages
+
+Patient PM2418:
+  Molecular Oncology: 14 pages
+  Genomic Test: 15 pages
+  Encounter Note: 8 pages
+  Radiology Test: 5 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2419:
+  Radiology Test: 5 pages
+  Surgical Pathology: 3 pages
+  Genomic Test: 31 pages
+  Molecular Oncology: 12 pages
+  Encounter Note: 8 pages
+
+Patient PM2423:
+  Surgical Pathology: 2 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 33 pages
+  Radiology Test: 9 pages
+  Encounter Note: 7 pages
+
+Patient PM2424:
+  Molecular Oncology: 12 pages
+  Radiology Test: 7 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2426:
+  Encounter Note: 5 pages
+  Molecular Oncology: 12 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2433:
+  Encounter Note: 15 pages
+  Molecular Oncology: 4 pages
+  Radiology Test: 8 pages
+  Surgical Pathology: 7 pages
+
+Patient PM2437:
+  Encounter Note: 6 pages
+  Molecular Oncology: 12 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 20 pages
+
+Patient PM2449:
+  Encounter Note: 5 pages
+  Radiology Test: 6 pages
+  Molecular Oncology: 10 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2451:
+  Genomic Test: 22 pages
+  Encounter Note: 4 pages
+  Radiology Test: 2 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2454:
+  Encounter Note: 5 pages
+  Radiology Test: 3 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2456:
+  Encounter Note: 15 pages
+  Genomic Test: 11 pages
+  Radiology Test: 9 pages
+  Surgical Pathology: 14 pages
+
+Patient PM2458:
+  Encounter Note: 12 pages
+  Surgical Pathology: 5 pages
+
+Patient PM2459:
+  Encounter Note: 5 pages
+  Molecular Oncology: 2 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2461:
+  Encounter Note: 6 pages
+  Genomic Test: 20 pages
+  Radiology Test: 4 pages
+  Surgical Pathology: 7 pages
+
+Patient PM2463:
+  Radiology Test: 6 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2465:
+  Encounter Note: 12 pages
+  Genomic Test: 21 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 17 pages
+
+Patient PM2466:
+  Radiology Test: 7 pages
+  Surgical Pathology: 8 pages
+  Encounter Note: 4 pages
+  Genomic Test: 20 pages
+
+Patient PM2468:
+  Radiology Test: 3 pages
+  Surgical Pathology: 6 pages
+
+Patient PM2471:
+  Radiology Test: 7 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 35 pages
+  Molecular Oncology: 4 pages
+  Encounter Note: 7 pages
+
+Patient PM2473:
+  Radiology Test: 6 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 6 pages
+  Encounter Note: 5 pages
+
+Patient PM2474:
+  Radiology Test: 12 pages
+  Genomic Test: 28 pages
+  Surgical Pathology: 7 pages
+  Molecular Oncology: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM2475:
+  Surgical Pathology: 13 pages
+  Radiology Test: 4 pages
+  Genomic Test: 31 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 6 pages
+
+Patient PM2476:
+  Radiology Test: 5 pages
+  Surgical Pathology: 3 pages
+  Molecular Oncology: 4 pages
+
+Patient PM2478:
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 6 pages
+  Radiology Test: 2 pages
+
+Patient PM2479:
+  Radiology Test: 10 pages
+  Surgical Pathology: 18 pages
+  Genomic Test: 22 pages
+  Molecular Oncology: 4 pages
+  Encounter Note: 6 pages
+
+Patient PM2480:
+  Radiology Test: 10 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 34 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 6 pages
+
+Patient PM2481:
+  Radiology Test: 2 pages
+  Surgical Pathology: 9 pages
+  Molecular Oncology: 5 pages
+
+Patient PM2482:
+  Radiology Test: 14 pages
+  Surgical Pathology: 16 pages
+  Genomic Test: 24 pages
+  Molecular Oncology: 9 pages
+  Encounter Note: 7 pages
+
+Patient PM2484:
+  Radiology Test: 8 pages
+  Surgical Pathology: 11 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 9 pages
+
+Patient PM2485:
+  Radiology Test: 6 pages
+  Surgical Pathology: 18 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 5 pages
+
+Patient PM2488:
+  Radiology Test: 17 pages
+  Surgical Pathology: 2 pages
+  Genomic Test: 21 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 9 pages
+
+Patient PM2495:
+  Surgical Pathology: 12 pages
+  Genomic Test: 27 pages
+  Molecular Oncology: 9 pages
+  Radiology Test: 5 pages
+  Encounter Note: 9 pages
+
+Patient PM2496:
+  Radiology Test: 8 pages
+  Surgical Pathology: 13 pages
+  Molecular Oncology: 10 pages
+  Encounter Note: 5 pages
+
+Patient PM2506:
+  Surgical Pathology: 2 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 31 pages
+  Radiology Test: 7 pages
+  Encounter Note: 8 pages
+
+Patient PM2513:
+  Radiology Test: 14 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 6 pages
+  Encounter Note: 6 pages
+
+Patient PM2522:
+  Radiology Test: 6 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 20 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 5 pages
+
+Patient PM2530:
+  Radiology Test: 4 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 29 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 8 pages
+
+Patient PM2532:
+  Radiology Test: 2 pages
+  Surgical Pathology: 2 pages
+  Molecular Oncology: 5 pages
+
+Patient PM2553:
+  Radiology Test: 3 pages
+  Surgical Pathology: 3 pages
+  Molecular Oncology: 5 pages
+
+Patient PM2558:
+  Radiology Test: 11 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 23 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 10 pages
+
+Patient PM2559:
+  Radiology Test: 9 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 30 pages
+  Encounter Note: 7 pages
+
+Patient PM2564:
+  Radiology Test: 10 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 28 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 8 pages
+
+Patient PM2568:
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 5 pages
+
+Patient PM2586:
+  Radiology Test: 4 pages
+  Surgical Pathology: 6 pages
+  Molecular Oncology: 3 pages
+  Encounter Note: 5 pages
+
+Patient PM2604:
+  Radiology Test: 13 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 16 pages
+  Encounter Note: 8 pages
+
+Patient PM2613:
+  Radiology Test: 9 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 20 pages
+  Encounter Note: 7 pages
+
+Patient PM2618:
+  Radiology Test: 6 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 2 pages
+  Encounter Note: 5 pages
+
+Patient PM2642:
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 2 pages
+  Radiology Test: 10 pages
+  Encounter Note: 5 pages
+
+Patient PM2643:
+  Radiology Test: 13 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 19 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 9 pages
+
+Patient PM2674:
+  Radiology Test: 8 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 23 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 7 pages
+
+Patient PM2709:
+  Radiology Test: 10 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 23 pages
+  Molecular Oncology: 2 pages
+  Encounter Note: 9 pages
+
+Patient PM2721:
+  Surgical Pathology: 10 pages
+  Radiology Test: 11 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 6 pages
+
+Patient PM2723:
+  Encounter Note: 7 pages
+  Genomic Test: 26 pages
+  Molecular Oncology: 7 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 2 pages
+
+Patient PM2730:
+  Radiology Test: 5 pages
+  Surgical Pathology: 3 pages
+  Genomic Test: 22 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 11 pages
+
+Patient PM2731:
+  Radiology Test: 13 pages
+  Surgical Pathology: 3 pages
+  Genomic Test: 21 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 6 pages
+
+Patient PM2732:
+  Radiology Test: 11 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 20 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 8 pages
+
+Patient PM2799:
+  Radiology Test: 12 pages
+  Surgical Pathology: 6 pages
+  Genomic Test: 27 pages
+  Molecular Oncology: 7 pages
+  Encounter Note: 9 pages
+
+Patient PM2832:
+  Radiology Test: 18 pages
+  Genomic Test: 25 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 12 pages
+
+Patient PM2835:
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 7 pages
+
+Patient PM2840:
+  Radiology Test: 8 pages
+  Encounter Note: 23 pages
+  Molecular Oncology: 2 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2842:
+  Encounter Note: 11 pages
+  Molecular Oncology: 2 pages
+  Radiology Test: 7 pages
+  Surgical Pathology: 4 pages
+
+Patient PM2855:
+  Radiology Test: 5 pages
+  Surgical Pathology: 5 pages
+  Molecular Oncology: 9 pages
+  Encounter Note: 7 pages
+
+Patient PM2906:
+  Radiology Test: 5 pages
+  Surgical Pathology: 6 pages
+  Molecular Oncology: 8 pages
+  Genomic Test: 23 pages
+  Encounter Note: 13 pages
+
+Patient PM2991:
+  Radiology Test: 3 pages
+  Surgical Pathology: 3 pages
+  Molecular Oncology: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM3053:
+  Radiology Test: 8 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 10 pages
+  Genomic Test: 18 pages
+  Encounter Note: 9 pages
+
+Patient PM3063:
+  Radiology Test: 6 pages
+  Surgical Pathology: 4 pages
+  Molecular Oncology: 5 pages
+  Encounter Note: 6 pages
+
+Patient PM328:
+  Surgical Pathology: 9 pages
+  Radiology Test: 3 pages
+  Encounter Note: 13 pages
+
+Patient PM336:
+  Surgical Pathology: 6 pages
+  Radiology Test: 17 pages
+  Encounter Note: 5 pages
+
+Patient PM346:
+  Encounter Note: 3 pages
+  Radiology Test: 4 pages
+  Surgical Pathology: 14 pages
+
+Patient PM349:
+  Surgical Pathology: 5 pages
+  Radiology Test: 13 pages
+  Encounter Note: 6 pages
+
+Patient PM352:
+  Surgical Pathology: 7 pages
+  Radiology Test: 17 pages
+  Genomic Test: 10 pages
+  Encounter Note: 9 pages
+
+Patient PM359:
+  Radiology Test: 7 pages
+  Surgical Pathology: 18 pages
+  Genomic Test: 10 pages
+  Encounter Note: 8 pages
+
+Patient PM371:
+  Encounter Note: 7 pages
+  Surgical Pathology: 5 pages
+
+Patient PM384:
+  Encounter Note: 9 pages
+  Radiology Test: 12 pages
+  Surgical Pathology: 4 pages
+
+Patient PM394:
+  Encounter Note: 21 pages
+  Radiology Test: 15 pages
+  Surgical Pathology: 3 pages
+
+Patient PM398:
+  Encounter Note: 5 pages
+  Genomic Test: 11 pages
+  Surgical Pathology: 7 pages
+
+Patient PM501:
+  Radiology Test: 19 pages
+  Surgical Pathology: 4 pages
+  Encounter Note: 12 pages
+
+Patient PM502:
+  Radiology Test: 8 pages
+  Surgical Pathology: 9 pages
+  Genomic Test: 10 pages
+  Encounter Note: 16 pages
+
+Patient PM564:
+  Radiology Test: 10 pages
+  Surgical Pathology: 9 pages
+  Genomic Test: 10 pages
+  Encounter Note: 12 pages
+  Molecular Oncology: 3 pages
+
+Patient PM596:
+  Radiology Test: 10 pages
+  Surgical Pathology: 13 pages
+  Genomic Test: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM626:
+  Surgical Pathology: 17 pages
+  Radiology Test: 18 pages
+  Genomic Test: 10 pages
+  Encounter Note: 21 pages
+
+Patient PM627:
+  Encounter Note: 12 pages
+
+Patient PM630:
+  Encounter Note: 35 pages
+  Genomic Test: 10 pages
+  Surgical Pathology: 7 pages
+
+Patient PM633:
+  Surgical Pathology: 5 pages
+  Genomic Test: 16 pages
+  Radiology Test: 3 pages
+  Encounter Note: 5 pages
+
+Patient PM634:
+  Encounter Note: 4 pages
+
+Patient PM669:
+  Encounter Note: 4 pages
+  Radiology Test: 6 pages
+  Surgical Pathology: 4 pages
+
+Patient PM692:
+  Encounter Note: 10 pages
+  Radiology Test: 6 pages
+  Genomic Test: 27 pages
+  Surgical Pathology: 5 pages
+
+Patient PM697:
+  Radiology Test: 18 pages
+  Surgical Pathology: 6 pages
+  Encounter Note: 6 pages
+
+Patient PM699:
+  Radiology Test: 45 pages
+  Genomic Test: 1 pages
+  Surgical Pathology: 3 pages
+
+Patient PM704:
+  Radiology Test: 4 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 10 pages
+  Encounter Note: 6 pages
+
+Patient PM737:
+  Surgical Pathology: 4 pages
+  Radiology Test: 14 pages
+  Genomic Test: 10 pages
+  Encounter Note: 4 pages
+
+Patient PM751:
+  Radiology Test: 4 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 10 pages
+  Encounter Note: 8 pages
+
+Patient PM753:
+  Radiology Test: 20 pages
+  Genomic Test: 1 pages
+  Encounter Note: 5 pages
+  Surgical Pathology: 3 pages
+
+Patient PM781:
+  Radiology Test: 8 pages
+  Surgical Pathology: 11 pages
+  Genomic Test: 10 pages
+  Encounter Note: 17 pages
+
+Patient PM797:
+  Radiology Test: 9 pages
+  Surgical Pathology: 4 pages
+  Genomic Test: 10 pages
+  Encounter Note: 9 pages
+
+Patient PM806:
+  Surgical Pathology: 4 pages
+  Genomic Test: 27 pages
+  Encounter Note: 5 pages
+  Radiology Test: 2 pages
+
+Patient PM815:
+  Radiology Test: 12 pages
+  Genomic Test: 1 pages
+  Encounter Note: 7 pages
+  Surgical Pathology: 3 pages
+
+Patient PM846:
+  Radiology Test: 21 pages
+  Genomic Test: 1 pages
+  Encounter Note: 6 pages
+  Surgical Pathology: 5 pages
+
+Patient PM848:
+  Genomic Test: 5 pages
+  Radiology Test: 10 pages
+  Encounter Note: 6 pages
+  Surgical Pathology: 5 pages
+
+Patient PM850:
+  Radiology Test: 5 pages
+
+Patient PM877:
+  Radiology Test: 11 pages
+  Genomic Test: 1 pages
+  Surgical Pathology: 5 pages
+  Encounter Note: 6 pages
+
+Patient PM883:
+  Radiology Test: 20 pages
+  Genomic Test: 1 pages
+  Surgical Pathology: 4 pages
+
+Patient PM884:
+  Surgical Pathology: 7 pages
+  Genomic Test: 3 pages
+  Radiology Test: 14 pages
+  Encounter Note: 14 pages
+
+Patient PM889:
+  Genomic Test: 69 pages
+  Radiology Test: 9 pages
+  Encounter Note: 5 pages
+  Surgical Pathology: 6 pages
+
+Patient PM902:
+  Genomic Test: 1 pages
+  Surgical Pathology: 4 pages
+  Encounter Note: 4 pages
+  Radiology Test: 3 pages
+
+Patient PM935:
+  Encounter Note: 5 pages
+  Genomic Test: 11 pages
+  Radiology Test: 7 pages
+  Surgical Pathology: 6 pages
+
+Patient PM954:
+  Radiology Test: 3 pages
+  Surgical Pathology: 5 pages
+  Genomic Test: 24 pages
+  Encounter Note: 6 pages
+
+Patient PM956:
+  Radiology Test: 27 pages
+  Genomic Test: 10 pages
+  Surgical Pathology: 4 pages
+  Encounter Note: 6 pages
+
+Patient PM971:
+  Radiology Test: 5 pages
+  Surgical Pathology: 6 pages
+  Encounter Note: 13 pages
+  Genomic Test: 21 pages
+
+Patient PM972:
+  Genomic Test: 1 pages
+  Surgical Pathology: 4 pages
+  Radiology Test: 2 pages
+  Encounter Note: 9 pages
+
+Word Counts per Category for Each Patient:
+
+Patient PM1005:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1011:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+
+Patient PM1025:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1026:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1031:
+  Radiology Test: 0 words
+  Encounter Note: 1628 words
+
+Patient PM1040:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 1747 words
+  Radiology Test: 0 words
+
+Patient PM1074:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1090:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1091:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM1095:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM1124:
+  Genomic Test: 0 words
+  Radiology Test: 633 words
+  Encounter Note: 0 words
+
+Patient PM1128:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1130:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1139:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1141:
+  Radiology Test: 1074 words
+  Surgical Pathology: 1016 words
+  Encounter Note: 0 words
+
+Patient PM1153:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1156:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1180:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1185:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1198:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1202:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1206:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM1231:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1238:
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1241:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1242:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1250:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1251:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1252:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1253:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1258:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1265:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1286:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1301:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1302:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1309:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1327:
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1330:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1333:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 373 words
+  Encounter Note: 0 words
+
+Patient PM1343:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1348:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1356:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1375:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1380:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1395:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1401:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1409:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+
+Patient PM1415:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+
+Patient PM1422:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1437:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1443:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 181 words
+  Encounter Note: 0 words
+
+Patient PM1444:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1448:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1454:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1466:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1481:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+
+Patient PM1487:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1490:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1491:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1508:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 179 words
+  Encounter Note: 0 words
+
+Patient PM1509:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1521:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1556:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+
+Patient PM1559:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1568:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+
+Patient PM1589:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 0 words
+  Encounter Note: 0 words
+
+Patient PM1615:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1643:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1644:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1646:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1647:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 2046 words
+  Molecular Oncology: 171 words
+  Encounter Note: 0 words
+
+Patient PM1670:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 180 words
+  Encounter Note: 0 words
+
+Patient PM1703:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 295 words
+  Encounter Note: 0 words
+
+Patient PM1716:
+  Surgical Pathology: 0 words
+  Molecular Oncology: 146 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1755:
+  Surgical Pathology: 0 words
+  Molecular Oncology: 134 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1760:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 136 words
+  Encounter Note: 0 words
+
+Patient PM1763:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1769:
+  Surgical Pathology: 0 words
+  Molecular Oncology: 141 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1771:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 145 words
+  Genomic Test: 1909 words
+  Radiology Test: 0 words
+
+Patient PM1774:
+  Genomic Test: 0 words
+  Molecular Oncology: 325 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1775:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 142 words
+  Encounter Note: 0 words
+
+Patient PM1777:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 140 words
+  Encounter Note: 0 words
+
+Patient PM1782:
+  Encounter Note: 0 words
+  Radiology Test: 627 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 151 words
+  Genomic Test: 0 words
+
+Patient PM1791:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 145 words
+  Encounter Note: 0 words
+
+Patient PM1793:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 147 words
+  Surgical Pathology: 0 words
+
+Patient PM1801:
+  Molecular Oncology: 144 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1816:
+  Genomic Test: 0 words
+  Molecular Oncology: 135 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1821:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 175 words
+  Genomic Test: 0 words
+
+Patient PM1822:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 163 words
+  Genomic Test: 0 words
+
+Patient PM1826:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 144 words
+  Encounter Note: 0 words
+
+Patient PM1830:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 167 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+
+Patient PM1836:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 151 words
+  Surgical Pathology: 0 words
+
+Patient PM1846:
+  Genomic Test: 0 words
+  Molecular Oncology: 145 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1858:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+  Molecular Oncology: 173 words
+  Genomic Test: 0 words
+
+Patient PM1864:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 153 words
+  Surgical Pathology: 0 words
+
+Patient PM1865:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 170 words
+  Surgical Pathology: 0 words
+
+Patient PM1879:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 163 words
+  Surgical Pathology: 0 words
+
+Patient PM1887:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 173 words
+  Genomic Test: 0 words
+
+Patient PM1894:
+  Genomic Test: 1590 words
+  Molecular Oncology: 282 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1903:
+  Genomic Test: 1800 words
+  Molecular Oncology: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1911:
+  Molecular Oncology: 156 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 386 words
+
+Patient PM1918:
+  Genomic Test: 2296 words
+  Molecular Oncology: 169 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM1928:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 963 words
+  Molecular Oncology: 1113 words
+  Genomic Test: 0 words
+
+Patient PM1935:
+  Genomic Test: 2024 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 163 words
+  Surgical Pathology: 0 words
+
+Patient PM1950:
+  Surgical Pathology: 0 words
+  Genomic Test: 1655 words
+  Molecular Oncology: 160 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM1957:
+  Encounter Note: 0 words
+  Surgical Pathology: 1016 words
+  Molecular Oncology: 171 words
+  Radiology Test: 0 words
+  Genomic Test: 2292 words
+
+Patient PM200:
+  Encounter Note: 1143 words
+  Radiology Test: 695 words
+  Surgical Pathology: 502 words
+
+Patient PM2028:
+  Molecular Oncology: 176 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2032:
+  Molecular Oncology: 158 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2033:
+  Molecular Oncology: 161 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2047:
+  Molecular Oncology: 168 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2062:
+  Molecular Oncology: 161 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2090:
+  Molecular Oncology: 159 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2096:
+  Molecular Oncology: 174 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2102:
+  Molecular Oncology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2106:
+  Molecular Oncology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2110:
+  Molecular Oncology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2118:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 172 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2120:
+  Encounter Note: 0 words
+  Surgical Pathology: 635 words
+  Molecular Oncology: 1089 words
+  Radiology Test: 0 words
+  Genomic Test: 2091 words
+
+Patient PM2130:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 1462 words
+  Molecular Oncology: 1231 words
+  Genomic Test: 2179 words
+
+Patient PM2173:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 1647 words
+  Molecular Oncology: 175 words
+  Encounter Note: 0 words
+
+Patient PM2190:
+  Radiology Test: 0 words
+  Surgical Pathology: 1649 words
+  Molecular Oncology: 0 words
+  Genomic Test: 1564 words
+  Encounter Note: 0 words
+
+Patient PM2191:
+  Molecular Oncology: 154 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Genomic Test: 1870 words
+  Surgical Pathology: 0 words
+
+Patient PM2195:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 1881 words
+  Molecular Oncology: 173 words
+
+Patient PM2200:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 956 words
+  Molecular Oncology: 1159 words
+  Genomic Test: 2042 words
+
+Patient PM2205:
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 181 words
+  Genomic Test: 1878 words
+
+Patient PM2216:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 173 words
+  Encounter Note: 0 words
+  Genomic Test: 2351 words
+
+Patient PM2229:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 635 words
+  Molecular Oncology: 175 words
+  Genomic Test: 2047 words
+
+Patient PM2236:
+  Molecular Oncology: 162 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2242:
+  Surgical Pathology: 0 words
+  Genomic Test: 1354 words
+  Molecular Oncology: 129 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2257:
+  Molecular Oncology: 160 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2267:
+  Surgical Pathology: 0 words
+  Genomic Test: 1576 words
+  Molecular Oncology: 173 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM227:
+  Encounter Note: 1899 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2271:
+  Encounter Note: 0 words
+  Surgical Pathology: 1074 words
+  Molecular Oncology: 155 words
+  Genomic Test: 1869 words
+  Radiology Test: 0 words
+
+Patient PM2291:
+  Encounter Note: 0 words
+  Surgical Pathology: 940 words
+  Molecular Oncology: 179 words
+  Genomic Test: 1904 words
+
+Patient PM2295:
+  Surgical Pathology: 0 words
+  Genomic Test: 1888 words
+  Molecular Oncology: 171 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2296:
+  Encounter Note: 0 words
+  Surgical Pathology: 600 words
+  Molecular Oncology: 171 words
+  Genomic Test: 2142 words
+  Radiology Test: 0 words
+
+Patient PM2354:
+  Surgical Pathology: 886 words
+  Molecular Oncology: 591 words
+  Genomic Test: 3171 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+
+Patient PM2356:
+  Radiology Test: 0 words
+  Surgical Pathology: 625 words
+  Genomic Test: 2368 words
+  Molecular Oncology: 129 words
+  Encounter Note: 0 words
+
+Patient PM2369:
+  Radiology Test: 0 words
+  Surgical Pathology: 475 words
+  Molecular Oncology: 612 words
+  Genomic Test: 3017 words
+  Encounter Note: 0 words
+
+Patient PM2397:
+  Radiology Test: 2565 words
+
+Patient PM2417:
+  Radiology Test: 0 words
+  Surgical Pathology: 310 words
+  Molecular Oncology: 122 words
+  Genomic Test: 180 words
+  Encounter Note: 0 words
+
+Patient PM2418:
+  Molecular Oncology: 351 words
+  Genomic Test: 372 words
+  Encounter Note: 2623 words
+  Radiology Test: 579 words
+  Surgical Pathology: 783 words
+
+Patient PM2419:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 139 words
+  Molecular Oncology: 124 words
+  Encounter Note: 0 words
+
+Patient PM2423:
+  Surgical Pathology: 286 words
+  Molecular Oncology: 1121 words
+  Genomic Test: 182 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2424:
+  Molecular Oncology: 334 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2426:
+  Encounter Note: 0 words
+  Molecular Oncology: 330 words
+  Surgical Pathology: 0 words
+
+Patient PM2433:
+  Encounter Note: 1881 words
+  Molecular Oncology: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2437:
+  Encounter Note: 0 words
+  Molecular Oncology: 330 words
+  Radiology Test: 0 words
+  Surgical Pathology: 3012 words
+
+Patient PM2449:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 332 words
+  Surgical Pathology: 0 words
+
+Patient PM2451:
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2454:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2456:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2458:
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2459:
+  Encounter Note: 0 words
+  Molecular Oncology: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2461:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2463:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2465:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2466:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+
+Patient PM2468:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2471:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 139 words
+  Encounter Note: 0 words
+
+Patient PM2473:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 147 words
+  Encounter Note: 0 words
+
+Patient PM2474:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 345 words
+  Encounter Note: 0 words
+
+Patient PM2475:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 171 words
+  Encounter Note: 0 words
+
+Patient PM2476:
+  Radiology Test: 0 words
+  Surgical Pathology: 952 words
+  Molecular Oncology: 163 words
+
+Patient PM2478:
+  Surgical Pathology: 1254 words
+  Molecular Oncology: 164 words
+  Radiology Test: 0 words
+
+Patient PM2479:
+  Radiology Test: 0 words
+  Surgical Pathology: 1035 words
+  Genomic Test: 0 words
+  Molecular Oncology: 159 words
+  Encounter Note: 0 words
+
+Patient PM2480:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 177 words
+  Encounter Note: 0 words
+
+Patient PM2481:
+  Radiology Test: 0 words
+  Surgical Pathology: 1001 words
+  Molecular Oncology: 171 words
+
+Patient PM2482:
+  Radiology Test: 0 words
+  Surgical Pathology: 940 words
+  Genomic Test: 0 words
+  Molecular Oncology: 290 words
+  Encounter Note: 0 words
+
+Patient PM2484:
+  Radiology Test: 246 words
+  Surgical Pathology: 808 words
+  Molecular Oncology: 124 words
+  Encounter Note: 0 words
+
+Patient PM2485:
+  Radiology Test: 0 words
+  Surgical Pathology: 1017 words
+  Molecular Oncology: 124 words
+  Encounter Note: 0 words
+
+Patient PM2488:
+  Radiology Test: 357 words
+  Surgical Pathology: 376 words
+  Genomic Test: 0 words
+  Molecular Oncology: 124 words
+  Encounter Note: 0 words
+
+Patient PM2495:
+  Surgical Pathology: 535 words
+  Genomic Test: 0 words
+  Molecular Oncology: 131 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2496:
+  Radiology Test: 0 words
+  Surgical Pathology: 1033 words
+  Molecular Oncology: 261 words
+  Encounter Note: 0 words
+
+Patient PM2506:
+  Surgical Pathology: 602 words
+  Molecular Oncology: 1119 words
+  Genomic Test: 2276 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2513:
+  Radiology Test: 0 words
+  Surgical Pathology: 943 words
+  Molecular Oncology: 1017 words
+  Genomic Test: 2162 words
+  Encounter Note: 0 words
+
+Patient PM2522:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 123 words
+  Encounter Note: 0 words
+
+Patient PM2530:
+  Radiology Test: 0 words
+  Surgical Pathology: 333 words
+  Genomic Test: 0 words
+  Molecular Oncology: 131 words
+  Encounter Note: 0 words
+
+Patient PM2532:
+  Radiology Test: 0 words
+  Surgical Pathology: 290 words
+  Molecular Oncology: 129 words
+
+Patient PM2553:
+  Radiology Test: 0 words
+  Surgical Pathology: 396 words
+  Molecular Oncology: 124 words
+
+Patient PM2558:
+  Radiology Test: 0 words
+  Surgical Pathology: 590 words
+  Genomic Test: 0 words
+  Molecular Oncology: 125 words
+  Encounter Note: 0 words
+
+Patient PM2559:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 122 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2564:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 19644 words
+  Molecular Oncology: 126 words
+  Encounter Note: 0 words
+
+Patient PM2568:
+  Surgical Pathology: 0 words
+  Molecular Oncology: 114 words
+
+Patient PM2586:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 0 words
+  Encounter Note: 0 words
+
+Patient PM2604:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2613:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2618:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 0 words
+  Encounter Note: 0 words
+
+Patient PM2642:
+  Surgical Pathology: 693 words
+  Molecular Oncology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2643:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 125 words
+  Encounter Note: 0 words
+
+Patient PM2674:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 123 words
+  Encounter Note: 0 words
+
+Patient PM2709:
+  Radiology Test: 275 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 0 words
+  Encounter Note: 0 words
+
+Patient PM2721:
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Molecular Oncology: 130 words
+  Encounter Note: 0 words
+
+Patient PM2723:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 168 words
+  Radiology Test: 0 words
+  Surgical Pathology: 570 words
+
+Patient PM2730:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 121 words
+  Encounter Note: 0 words
+
+Patient PM2731:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 118 words
+  Encounter Note: 0 words
+
+Patient PM2732:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 129 words
+  Encounter Note: 0 words
+
+Patient PM2799:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Molecular Oncology: 124 words
+  Encounter Note: 0 words
+
+Patient PM2832:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 123 words
+  Encounter Note: 0 words
+
+Patient PM2835:
+  Surgical Pathology: 0 words
+  Molecular Oncology: 126 words
+  Encounter Note: 0 words
+
+Patient PM2840:
+  Radiology Test: 0 words
+  Encounter Note: 1740 words
+  Molecular Oncology: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2842:
+  Encounter Note: 1459 words
+  Molecular Oncology: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM2855:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 123 words
+  Encounter Note: 0 words
+
+Patient PM2906:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 124 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM2991:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 123 words
+  Encounter Note: 0 words
+
+Patient PM3053:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 127 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM3063:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Molecular Oncology: 125 words
+  Encounter Note: 0 words
+
+Patient PM328:
+  Surgical Pathology: 931 words
+  Radiology Test: 0 words
+  Encounter Note: 1400 words
+
+Patient PM336:
+  Surgical Pathology: 576 words
+  Radiology Test: 0 words
+  Encounter Note: 1239 words
+
+Patient PM346:
+  Encounter Note: 535 words
+  Radiology Test: 1159 words
+  Surgical Pathology: 0 words
+
+Patient PM349:
+  Surgical Pathology: 711 words
+  Radiology Test: 0 words
+  Encounter Note: 1688 words
+
+Patient PM352:
+  Surgical Pathology: 953 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 1746 words
+
+Patient PM359:
+  Radiology Test: 0 words
+  Surgical Pathology: 2305 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM371:
+  Encounter Note: 1989 words
+  Surgical Pathology: 0 words
+
+Patient PM384:
+  Encounter Note: 1759 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM394:
+  Encounter Note: 2612 words
+  Radiology Test: 0 words
+  Surgical Pathology: 601 words
+
+Patient PM398:
+  Encounter Note: 1981 words
+  Genomic Test: 0 words
+  Surgical Pathology: 922 words
+
+Patient PM501:
+  Radiology Test: 0 words
+  Surgical Pathology: 583 words
+  Encounter Note: 5138 words
+
+Patient PM502:
+  Radiology Test: 0 words
+  Surgical Pathology: 1560 words
+  Genomic Test: 0 words
+  Encounter Note: 4475 words
+
+Patient PM564:
+  Radiology Test: 0 words
+  Surgical Pathology: 1286 words
+  Genomic Test: 0 words
+  Encounter Note: 4185 words
+  Molecular Oncology: 0 words
+
+Patient PM596:
+  Radiology Test: 0 words
+  Surgical Pathology: 1472 words
+  Genomic Test: 0 words
+  Encounter Note: 1710 words
+
+Patient PM626:
+  Surgical Pathology: 1723 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 2339 words
+
+Patient PM627:
+  Encounter Note: 4331 words
+
+Patient PM630:
+  Encounter Note: 4421 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM633:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM634:
+  Encounter Note: 856 words
+
+Patient PM669:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM692:
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM697:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM699:
+  Radiology Test: 786 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM704:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM737:
+  Surgical Pathology: 889 words
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM751:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM753:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM781:
+  Radiology Test: 0 words
+  Surgical Pathology: 1378 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM797:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM806:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+
+Patient PM815:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM846:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM848:
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM850:
+  Radiology Test: 0 words
+
+Patient PM877:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM883:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM884:
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM889:
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM902:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+  Radiology Test: 0 words
+
+Patient PM935:
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+
+Patient PM954:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Genomic Test: 0 words
+  Encounter Note: 0 words
+
+Patient PM956:
+  Radiology Test: 0 words
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+
+Patient PM971:
+  Radiology Test: 0 words
+  Surgical Pathology: 0 words
+  Encounter Note: 0 words
+  Genomic Test: 0 words
+
+Patient PM972:
+  Genomic Test: 0 words
+  Surgical Pathology: 0 words
+  Radiology Test: 0 words
+  Encounter Note: 0 words
