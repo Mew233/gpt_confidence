@@ -11,9 +11,6 @@ import streamlit as st
 from doctr.file_utils import is_tf_available
 from doctr.io import DocumentFile
 from doctr.utils.visualization import visualize_page
-from streamlit_extras.switch_page_button import switch_page
-
-# if st.button('Trial'):\
 
 if is_tf_available():
     import tensorflow as tf
@@ -34,7 +31,7 @@ else:
 def main(det_archs, reco_archs):
     """Build a streamlit layout"""
     # Wide mode
-    # st.set_page_config(layout="wide")
+    st.set_page_config(layout="wide")
 
     # Designing the interface
     st.title("Document Text Recognition using an End-to-End OCR framework")
@@ -139,3 +136,7 @@ def main(det_archs, reco_archs):
                 # Display JSON
                 st.markdown("\nHere are your analysis results in JSON format:")
                 st.json(page_export, expanded=False)
+
+
+if __name__ == "__main__":
+    main(DET_ARCHS, RECO_ARCHS)
