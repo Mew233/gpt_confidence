@@ -8,15 +8,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 
-import doctr
+import doctr as dr
 # from doctr.file_utils import is_tf_available
 # from doctr.io import DocumentFile
 # from doctr.utils.visualization import visualize_page
-# from streamlit_extras.switch_page_button import switch_page
 
-# if st.button('Trial'):\
-
-if doctr.file_utils.is_tf_available():
+if dr.file_utils.is_tf_available():
     import tensorflow as tf
     from backend.tensorflow import DET_ARCHS, RECO_ARCHS, forward_image, load_predictor
 
@@ -57,16 +54,16 @@ def main(det_archs, reco_archs):
     uploaded_file = st.sidebar.file_uploader("Upload files", type=["pdf", "png", "jpeg", "jpg"])
     if uploaded_file is not None:
         if uploaded_file.name.endswith(".pdf"):
-            doc = doctr.io.DocumentFile.from_pdf(uploaded_file.read())
+            doc = dr.io.DocumentFile.from_pdf(uploaded_file.read())
         else:
-            doc = doctr.io.DocumentFile.from_images(uploaded_file.read())
+            doc = dr.io.DocumentFile.from_images(uploaded_file.read())
         page_idx = st.sidebar.selectbox("Page selection", [idx + 1 for idx in range(len(doc))]) - 1
         page = doc[page_idx]
         cols[0].image(page)
 
     # Model selection
     st.sidebar.title("Model selection")
-    st.sidebar.markdown("**Backend**: " + ("TensorFlow" if is_tf_available() else "PyTorch"))
+    st.sidebar.markdown("**Backend**: " + ("TensorFlow" if dr.file_utils.is_tf_available() else "PyTorch"))
     det_arch = st.sidebar.selectbox("Text detection model", det_archs)
     reco_arch = st.sidebar.selectbox("Text recognition model", reco_archs)
 
@@ -128,7 +125,7 @@ def main(det_archs, reco_archs):
 
                 # Plot OCR output
                 out = predictor([page])
-                fig = visualize_page(out.pages[0].export(), out.pages[0].page, interactive=False, add_labels=False)
+                fig = dr.utils.visualization.visualize_page(out.pages[0].export(), out.pages[0].page, interactive=False, add_labels=False)
                 cols[2].pyplot(fig)
 
                 # Page reconsitution under input page
@@ -140,6 +137,7 @@ def main(det_archs, reco_archs):
                 # Display JSON
                 st.markdown("\nHere are your analysis results in JSON format:")
                 st.json(page_export, expanded=False)
+
 
 if __name__ == "__main__":
     main(DET_ARCHS, RECO_ARCHS)
