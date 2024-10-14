@@ -1,3 +1,6 @@
 doctr
 opencv-python-headless
 matplotlib
+doctr.file_utils
+doctr.io
+doctr.utils.visualization

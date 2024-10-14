@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
 
+import doctr as dr
 from doctr.file_utils import is_tf_available
 from doctr.io import DocumentFile
 from doctr.utils.visualization import visualize_page
