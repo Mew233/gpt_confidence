@@ -4,10 +4,6 @@ from datetime import datetime, timedelta
 import numpy as np
 import re
 import matplotlib.pyplot as plt
-from torchdrug.metrics import accuracy
-import matplotlib
-matplotlib.use('TkAgg')
-import seaborn as sns
 
 # Load data
 model_output_file = 'onc_gbm_Highdata_ADV_output_2024-10-15.xlsx'
@@ -62,7 +58,11 @@ def process_ground_truth(ground_truth_df):
             continue
 
         # Ensure patient_id is numeric for easier handling
-        patient_id = int(patient_id)
+        try:
+            patient_id = int(patient_id)
+        except ValueError:
+            print(f"Skipping patient ID {patient_id} due to format issues.")
+            continue
 
         if patient_id not in ground_truth_data:
             ground_truth_data[patient_id] = []
@@ -102,24 +102,25 @@ def relaxed_match(model_tuples, gold_tuple, grace_period_days=10, relax_to='day'
     return False
 
 
-# Evaluate model performance
+# Evaluate model performance and categorize unmatched patients
 
 def evaluate_model(model_data, ground_truth_data, evaluation_mode='strict'):
     y_true = []
     y_pred = []
     unmatched_patients = []
+    lack_of_data_patients = []
+    inaccurate_patients = []
 
     for patient_id in ground_truth_data:
         if patient_id not in model_data:
             y_true.append(0)
             y_pred.append(0)
             unmatched_patients.append(patient_id)
+            lack_of_data_patients.append(patient_id)
             continue
 
         model_tuples = [{'Time': pd.to_datetime(entry, errors='coerce')} for entry in model_data[patient_id]]
-
-        gold_tuple = {'Time': pd.to_datetime(ground_truth_data[patient_id][0][1], errors='coerce'),
-                      'Method': set(ground_truth_data[patient_id][0][0].split(', '))}
+        gold_tuple = {'Time': pd.to_datetime(ground_truth_data[patient_id][0][1], errors='coerce')}
 
         if evaluation_mode == 'strict':
             match = strict_match(model_tuples, gold_tuple)
@@ -128,33 +129,59 @@ def evaluate_model(model_data, ground_truth_data, evaluation_mode='strict'):
 
         if not match:
             unmatched_patients.append(patient_id)
+            # Determine if the mismatch is due to lack of data or inaccuracy
+            if len(model_tuples) == 0:
+                lack_of_data_patients.append(patient_id)
+            else:
+                inaccurate_patients.append(patient_id)
 
         y_true.append(1)
         y_pred.append(1 if match else 0)
 
-    # Print unmatched patients
+    # Print unmatched patients and categorize reasons
     print(f"Unmatched patients in {evaluation_mode} evaluation: {unmatched_patients}")
+    print(f"Patients lacking data in {evaluation_mode} evaluation: {lack_of_data_patients}")
+    print(f"Patients with inaccuracies in {evaluation_mode} evaluation: {inaccurate_patients}")
 
     # Calculate metrics
-    # f1 = f1_score(y_true, y_pred, average='micro')
-    # precision = precision_score(y_true, y_pred, average='micro')
-    # recall = recall_score(y_true, y_pred, average='micro')
+    f1 = f1_score(y_true, y_pred, average='macro')
+    precision = precision_score(y_true, y_pred, average='macro')
+    recall = recall_score(y_true, y_pred, average='macro')
     accuracy = accuracy_score(y_true, y_pred)
-    return accuracy
+    return f1, precision, recall, accuracy, inaccurate_patients
 
 
-# Output dataframe to report F1, Precision, Recall
+# Output dataframe to report F1, Precision, Recall, Accuracy
+
 def df_output(model_data, ground_truth_data):
     metrics = []
     settings = ['strict', 'day', 'month', 'year']
+    final_inaccurate_patients = set()
     for setting in settings:
-        accuracy = evaluate_model(model_data, ground_truth_data, evaluation_mode=setting)
-        metrics.append([f"{setting.capitalize()}", accuracy])
+        f1, precision, recall, accuracy, inaccurate_patients = evaluate_model(model_data, ground_truth_data,
+                                                                              evaluation_mode=setting)
+        metrics.append([f"{setting.capitalize()}", f1, precision, recall, accuracy])
+        final_inaccurate_patients.update(inaccurate_patients)
+
+    # Recalculate accuracy excluding patients with lack of data
+    print(f"Recalculating accuracy excluding patients lacking data...")
+    y_true = []
+    y_pred = []
+    for patient_id in ground_truth_data:
+        if patient_id in final_inaccurate_patients:
+            y_true.append(1)
+            y_pred.append(0)  # Mark as incorrect
+        else:
+            y_true.append(1)
+            y_pred.append(1)  # Mark as correct
+
+    recalculated_accuracy = accuracy_score(y_true, y_pred)
+    print(f"Recalculated Accuracy (excluding patients lacking data): {recalculated_accuracy:.2f}")
 
     # Create a DataFrame
-    df_metrics = pd.DataFrame(metrics, columns=['Evaluation Mode', 'Accuracy'])
+    df_metrics = pd.DataFrame(metrics, columns=['Evaluation Mode', 'F1 Score', 'Precision', 'Recall', 'Accuracy'])
     df_metrics = df_metrics.style.format(
-        {'Accuracy': '{:.2f}'}).set_caption(
+        {'F1 Score': '{:.2f}', 'Precision': '{:.2f}', 'Recall': '{:.2f}', 'Accuracy': '{:.2f}'}).set_caption(
         "Evaluation Metrics Report").set_table_styles([
         {
             'selector': 'caption',
@@ -175,29 +202,16 @@ def df_output(model_data, ground_truth_data):
 
 
 # Plot function to visualize metrics
+
 def plot_metrics(df_metrics):
     df_metrics_numeric = df_metrics.data.set_index('Evaluation Mode')
-    plt.figure(figsize=(14, 8))
-    sns.set_theme(style="whitegrid")
-    df_metrics_numeric.plot(kind='bar', stacked=False, color='lightblue', width=0.7, edgecolor='black')
-
-    plt.title('Evaluation Metrics for Initial Dx Date in different modes', fontsize=16, fontweight='bold', color='darkblue')
-    plt.ylabel('Accuracy %', fontsize=16, fontweight='bold')
-    plt.xlabel('Evaluation Mode', fontsize=16, fontweight='bold')
-    plt.legend('', frameon=False)
-    plt.ylim(0, 1.1)
-    plt.xticks(fontsize=12, rotation=0, ha='right')
-    plt.yticks(fontsize=12)
+    df_metrics_numeric.plot(kind='bar', figsize=(12, 8), rot=45)
+    plt.title('Evaluation Metrics for Different Modes')
+    plt.ylabel('Score')
+    plt.xlabel('Evaluation Mode')
+    plt.ylim(0, 1)
+    plt.legend(loc='lower right')
     plt.tight_layout()
-    plt.grid(visible=True, linestyle='--', linewidth=0.5, axis='y')
-
-    # Add labels on top of each bar
-    ax = plt.gca()
-    for p in ax.patches:
-        ax.annotate(f'{p.get_height():.2f}', (p.get_x() + p.get_width() / 2, p.get_height()),
-                    ha='center', va='bottom', fontsize=12, fontweight='bold', color='black')
-
-    plt.savefig("../output/dx_assessment.png", dpi=300)
     plt.show()
 
 
